@@ -29,7 +29,7 @@ Feature: Validate navigation for specific links based on href attribute
     # Given I open the Automation Practice page for links
     When I find and click the link with href "../simple-html-elements-for-automation/"
     Then I should be redirected to the page with URL containing "https://ultimateqa.com/simple-html-elements-for-automation/"
-    Then I fetch the browser console logs
+   
 
     # Given I open the Automation Practice page for links
     # When I find and click the link with href "fake-pricing-page"

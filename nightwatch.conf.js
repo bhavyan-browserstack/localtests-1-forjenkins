@@ -66,8 +66,8 @@ module.exports = {
 //     networkLogs: "true",
 //     consoleLogs: "info",
 //     "seleniumVersion" : "4.0.0",
-//     userName: '${BROWSERSTACK_USERNAME}' || 'bhavyananda_j1URsW',
-//     accessKey: '${BROWSERSTACK_ACCESS_KEY}' || '7MzqwjHuz4zB5mqHLHdF',
+//     userName: '${BROWSERSTACK_USERNAME}' || 
+//     accessKey: '${BROWSERSTACK_ACCESS_KEY}' || 
 //   },
 // }
 // const browserStack = {
@@ -158,8 +158,8 @@ module.exports = {
 // //     consoleLogs: "info",
 // //     "source": "nightwatch:sample-sdk:v1.0",
 // //     "seleniumVersion" : "4.0.0",
-// //     userName: 'bhavyananda_j1URsW',
-// //     accessKey:'7MzqwjHuz4zB5mqHLHdF',
+// //     userName: 
+// //     accessKey:
 // //   },
 // // }
 // // const browserStack = {
@@ -243,8 +243,8 @@ module.exports = {
 // //     "buildName" : "browserstack-build-77777",
 // //     "sessionName" : "BStack linktest snippet",
 // //     "seleniumVersion" : "4.0.0",
-// //     userName: 'bhavyananda_j1URsW' || 'YOUR_USERNAME',
-// //     accessKey: '7MzqwjHuz4zB5mqHLHdF' || 'YOUR_ACCESS_KEY',
+// //     userName:  || 'YOUR_USERNAME',
+// //     accessKey: || 'YOUR_ACCESS_KEY',
 // //   },
 // // }
 
@@ -343,8 +343,8 @@ module.exports = {
 //       networkLogs: "true",
 //       consoleLogs: "info",
 //       "seleniumVersion" : "4.0.0",
-//       userName: '${BROWSERSTACK_USERNAME}' || 'bhavyananda_j1URsW',
-//       accessKey: '${BROWSERSTACK_ACCESS_KEY}' || '7MzqwjHuz4zB5mqHLHdF',
+//       userName: '${BROWSERSTACK_USERNAME}' || 
+//       accessKey: '${BROWSERSTACK_ACCESS_KEY}' || 
 //     },
 //   }
 // const browserStack = {
@@ -381,8 +381,8 @@ module.exports = {
 //     browserstackLocal: 'false', opts: { forceLocal: false } ,// set true to manage browserstack local tunnel. Defaults to false.
 //     test_observability: {
 //       enabled: true,
-//       user: 'bhavyananda_j1URsW' || process.env.BROWSERSTACK_USERNAME,
-//       key: '7MzqwjHuz4zB5mqHLHdF' || process.env.BROWSERSTACK_ACCESS_KEY,
+//       user: || process.env.BROWSERSTACK_USERNAME,
+//       key: '|| process.env.BROWSERSTACK_ACCESS_KEY,
 //       projectName: "sample_initial",
 //       buildName: "sample_o11y_1",
 //       buildTag: ["build for aut","o11y1"],
