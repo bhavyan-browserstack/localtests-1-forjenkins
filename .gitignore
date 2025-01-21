@@ -5,3 +5,4 @@ log
 logs
 
 test_output
+browserstack.yml
