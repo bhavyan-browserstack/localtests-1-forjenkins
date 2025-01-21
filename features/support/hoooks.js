@@ -12,6 +12,7 @@ BeforeAll(async () => {
 });
 
 AfterAll(async () => {
+
   try {
     console.log("After all scenarios - Closing the browser");
      // Quit the browser after all tests are done

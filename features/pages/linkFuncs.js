@@ -80,6 +80,17 @@ class linkFunc {
     await browser.back();
     await browser.pause(3000); // Wait for the page to load
   }
+  async captureConsoleEvents() {
+    const logs = await browser.getLog('browser');  // Capture browser logs
+    logs.forEach(log => {
+      const message = log.message;
+      // If the message is an object, try to log specific properties
+        console.log(`Log Type: ${log.level}, Timestamp: ${log.timestamp}`);
+        console.log('Log Message:', JSON.stringify(message, null, 2));  // Pretty-print the object 
+
+    });
+  }
+  
 }
 
 module.exports = new linkFunc();

@@ -30,12 +30,13 @@ module.exports = {
       },
       desiredCapabilities: {
         browserName: 'chrome',
-        'goog:loggingPrefs': { browser: 'ALL' }, // Enable browser log retrieval
-        // If you need specific Chrome options, you can define them here:
         chromeOptions: {
           // Example: headless mode
           args: ['--headless', '--disable-gpu', '--window-size=1920x1080'],
-        },
+        }, 
+        "loggingPrefs": {
+          "browser": "ALL"
+        }
       },
       test_runner: {
         type: 'cucumber',

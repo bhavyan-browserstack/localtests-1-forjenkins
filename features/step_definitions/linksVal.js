@@ -1,7 +1,6 @@
-const { Given, When, Then } = require('@cucumber/cucumber');
+const { Given, When, Then , After } = require('@cucumber/cucumber');
 const linkFunc= require('../pages/linkFuncs.js');
 const locatorsPage = require('/Users/bhavyananda/Desktop/Initial scripts/ass-1-v2/features/locators/locators.js');
-
 
 Given('I open the Automation Practice page for links', async () => {
   const theURL= 'https://ultimateqa.com/automation/';
@@ -25,6 +24,10 @@ Then('I should be redirected to the page with URL containing {string}', async (e
   const currentURL2 = await linkFunc.getPresentURL();
   console.log(`headed back to ${currentURL2}`);
   // dummy error
+});
+
+After(async () => {
+  await linkFunc.captureConsoleEvents();
 });
 
 /*
