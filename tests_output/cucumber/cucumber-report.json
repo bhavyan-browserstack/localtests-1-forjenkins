@@ -1,0 +1,2837 @@
+{
+  "metadata": {
+    "protocolVersion": "27.0.2",
+    "implementation": {
+      "version": "11.2.0",
+      "name": "cucumber-js"
+    },
+    "cpu": {
+      "name": "arm64"
+    },
+    "os": {
+      "name": "darwin",
+      "version": "24.2.0"
+    },
+    "runtime": {
+      "name": "node.js",
+      "version": "18.18.0"
+    }
+  },
+  "source": {
+    "data": "Feature: Validate the page title of the Automation Practice page\n  @title\n  Scenario: The user opens the Automation Practice homepage and checks the title\n    Given I open the Automation Practice page\n    Then the page title should be \"Automation Practice - Ultimate QA\"\n\n#   @search @cucumber\n#   Scenario: Searching for cucumber\n#     Given I search \"cucumber\"\n#     Then Body contains \"Muskusroos (Rosa moschata) en komkommer (Cucumis sativus)\"\n\n\n\n\n  ",
+    "uri": "features/rijksmuseum.feature",
+    "mediaType": "text/x.cucumber.gherkin+plain"
+  },
+  "gherkinDocument": [
+    {
+      "feature": {
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Validate navigation for specific links based on href attribute",
+        "description": "",
+        "children": [
+          {
+            "scenario": {
+              "id": "8827886e-539c-49c7-95a2-8fbcee46a22d",
+              "tags": [
+                {
+                  "location": {
+                    "line": 3,
+                    "column": 3
+                  },
+                  "name": "@link",
+                  "id": "ea4dd981-b9a1-4157-9a4a-4d232ceec97e"
+                },
+                {
+                  "location": {
+                    "line": 3,
+                    "column": 9
+                  },
+                  "name": "@link1",
+                  "id": "d6aabcdf-33b8-4f60-9fba-915d2de91185"
+                }
+              ],
+              "location": {
+                "line": 4,
+                "column": 3
+              },
+              "keyword": "Scenario",
+              "name": "Validate navigation for the \"complicated-page\" link",
+              "description": "",
+              "steps": [
+                {
+                  "id": "2239e906-83ec-4028-bec6-918b009b98fe",
+                  "location": {
+                    "line": 5,
+                    "column": 5
+                  },
+                  "keyword": "Given ",
+                  "keywordType": "Context",
+                  "text": "I open the Automation Practice page for links"
+                },
+                {
+                  "id": "b4edc2b5-ea8a-4265-858c-ff021a7975bf",
+                  "location": {
+                    "line": 6,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"../complicated-page\""
+                },
+                {
+                  "id": "6490c8a8-f831-4cb6-a004-6ef924550f0f",
+                  "location": {
+                    "line": 7,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/complicated-page\""
+                },
+                {
+                  "id": "1bc763d8-f8a1-4b82-8c83-32f0e9a44255",
+                  "location": {
+                    "line": 11,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"../fake-pricing-page\""
+                },
+                {
+                  "id": "f9d59a08-9bdf-4b3c-a037-b7964875a18b",
+                  "location": {
+                    "line": 12,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/automation/fake-pricing-page/\""
+                },
+                {
+                  "id": "9fc04adc-1c1e-4609-bceb-260c6ade28a6",
+                  "location": {
+                    "line": 15,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"https://ultimateqa.com/filling-out-forms/\""
+                },
+                {
+                  "id": "436b608a-bd72-4898-871a-dc0a9af0f39a",
+                  "location": {
+                    "line": 16,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/filling-out-forms/\""
+                },
+                {
+                  "id": "139736ff-6278-4bac-b918-e6c674b942d4",
+                  "location": {
+                    "line": 19,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"../fake-landing-page\""
+                },
+                {
+                  "id": "d70824a4-5290-49f4-9168-7ad745260474",
+                  "location": {
+                    "line": 20,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/fake-landing-page\""
+                },
+                {
+                  "id": "15d73497-8934-4c7c-82bb-cf42ebb38cd8",
+                  "location": {
+                    "line": 23,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"https://ultimateqa.com/sample-application-lifecycle-sprint-1/\""
+                },
+                {
+                  "id": "39fbfd91-e05b-4fcb-bb66-bbf072bee760",
+                  "location": {
+                    "line": 24,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/sample-application-lifecycle-sprint-1/\""
+                },
+                {
+                  "id": "2f71399e-53e4-49a3-a850-2a2fbcc1597b",
+                  "location": {
+                    "line": 27,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"http://courses.ultimateqa.com/users/sign_in\""
+                },
+                {
+                  "id": "5355c5d0-16c0-4c1a-8858-1b1990d47e75",
+                  "location": {
+                    "line": 28,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://courses.ultimateqa.com/users/sign_in\""
+                },
+                {
+                  "id": "657da703-7088-444b-af39-397f66d6727c",
+                  "location": {
+                    "line": 31,
+                    "column": 5
+                  },
+                  "keyword": "When ",
+                  "keywordType": "Action",
+                  "text": "I find and click the link with href \"../simple-html-elements-for-automation/\""
+                },
+                {
+                  "id": "89ca7db8-b138-4089-bb24-b6b36df19ff6",
+                  "location": {
+                    "line": 32,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/simple-html-elements-for-automation/\""
+                }
+              ],
+              "examples": []
+            }
+          }
+        ]
+      },
+      "comments": [
+        {
+          "location": {
+            "line": 10,
+            "column": 1
+          },
+          "text": "    # Given I open the Automation Practice page for links"
+        },
+        {
+          "location": {
+            "line": 14,
+            "column": 1
+          },
+          "text": "    # Given I open the Automation Practice page for links"
+        },
+        {
+          "location": {
+            "line": 18,
+            "column": 1
+          },
+          "text": "    # Given I open the Automation Practice page for links"
+        },
+        {
+          "location": {
+            "line": 22,
+            "column": 1
+          },
+          "text": "    # Given I open the Automation Practice page for links"
+        },
+        {
+          "location": {
+            "line": 26,
+            "column": 1
+          },
+          "text": "    # Given I open the Automation Practice page for links"
+        },
+        {
+          "location": {
+            "line": 30,
+            "column": 1
+          },
+          "text": "    # Given I open the Automation Practice page for links"
+        }
+      ],
+      "uri": "features/linksTest.feature"
+    },
+    {
+      "feature": {
+        "tags": [],
+        "location": {
+          "line": 1,
+          "column": 1
+        },
+        "language": "en",
+        "keyword": "Feature",
+        "name": "Validate the page title of the Automation Practice page",
+        "description": "",
+        "children": [
+          {
+            "scenario": {
+              "id": "72fac703-ac28-4039-a70e-d896e85e5c4f",
+              "tags": [
+                {
+                  "location": {
+                    "line": 2,
+                    "column": 3
+                  },
+                  "name": "@title",
+                  "id": "34cb0a2a-49fb-45c5-947e-2c8f678ee921"
+                }
+              ],
+              "location": {
+                "line": 3,
+                "column": 3
+              },
+              "keyword": "Scenario",
+              "name": "The user opens the Automation Practice homepage and checks the title",
+              "description": "",
+              "steps": [
+                {
+                  "id": "28754f42-26d8-4a1f-bc1d-9602248911b4",
+                  "location": {
+                    "line": 4,
+                    "column": 5
+                  },
+                  "keyword": "Given ",
+                  "keywordType": "Context",
+                  "text": "I open the Automation Practice page"
+                },
+                {
+                  "id": "81a8858a-1149-4c13-becf-8273abeccdda",
+                  "location": {
+                    "line": 5,
+                    "column": 5
+                  },
+                  "keyword": "Then ",
+                  "keywordType": "Outcome",
+                  "text": "the page title should be \"Automation Practice - Ultimate QA\""
+                }
+              ],
+              "examples": []
+            }
+          }
+        ]
+      },
+      "comments": [
+        {
+          "location": {
+            "line": 7,
+            "column": 1
+          },
+          "text": "#   @search @cucumber"
+        },
+        {
+          "location": {
+            "line": 8,
+            "column": 1
+          },
+          "text": "#   Scenario: Searching for cucumber"
+        },
+        {
+          "location": {
+            "line": 9,
+            "column": 1
+          },
+          "text": "#     Given I search \"cucumber\""
+        },
+        {
+          "location": {
+            "line": 10,
+            "column": 1
+          },
+          "text": "#     Then Body contains \"Muskusroos (Rosa moschata) en komkommer (Cucumis sativus)\""
+        }
+      ],
+      "uri": "features/rijksmuseum.feature"
+    }
+  ],
+  "pickle": [
+    {
+      "id": "aa9c355b-2a16-499d-8d55-3423ef279498",
+      "uri": "features/linksTest.feature",
+      "astNodeIds": [
+        "8827886e-539c-49c7-95a2-8fbcee46a22d"
+      ],
+      "tags": [
+        {
+          "name": "@link",
+          "astNodeId": "ea4dd981-b9a1-4157-9a4a-4d232ceec97e"
+        },
+        {
+          "name": "@link1",
+          "astNodeId": "d6aabcdf-33b8-4f60-9fba-915d2de91185"
+        }
+      ],
+      "name": "Validate navigation for the \"complicated-page\" link",
+      "language": "en",
+      "steps": [
+        {
+          "id": "48559791-3c0c-4532-be9a-222210680816",
+          "text": "I open the Automation Practice page for links",
+          "type": "Context",
+          "astNodeIds": [
+            "2239e906-83ec-4028-bec6-918b009b98fe"
+          ]
+        },
+        {
+          "id": "5a62ae17-fc87-46c3-b570-da5a890d1333",
+          "text": "I find and click the link with href \"../complicated-page\"",
+          "type": "Action",
+          "astNodeIds": [
+            "b4edc2b5-ea8a-4265-858c-ff021a7975bf"
+          ]
+        },
+        {
+          "id": "82e785b1-7ceb-44b0-b85f-a86095ba8aa7",
+          "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/complicated-page\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "6490c8a8-f831-4cb6-a004-6ef924550f0f"
+          ]
+        },
+        {
+          "id": "a83680ea-484a-4b9a-a2e4-630f62a3a417",
+          "text": "I find and click the link with href \"../fake-pricing-page\"",
+          "type": "Action",
+          "astNodeIds": [
+            "1bc763d8-f8a1-4b82-8c83-32f0e9a44255"
+          ]
+        },
+        {
+          "id": "f50ec5e5-fd63-4c08-856b-cfc435fe11eb",
+          "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/automation/fake-pricing-page/\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "f9d59a08-9bdf-4b3c-a037-b7964875a18b"
+          ]
+        },
+        {
+          "id": "49e6d3de-ad21-4549-b1d0-82b3b58786c9",
+          "text": "I find and click the link with href \"https://ultimateqa.com/filling-out-forms/\"",
+          "type": "Action",
+          "astNodeIds": [
+            "9fc04adc-1c1e-4609-bceb-260c6ade28a6"
+          ]
+        },
+        {
+          "id": "20a1132a-2cca-4050-a2e4-5d93f75cd71c",
+          "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/filling-out-forms/\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "436b608a-bd72-4898-871a-dc0a9af0f39a"
+          ]
+        },
+        {
+          "id": "e4cbe832-9d96-4b4e-8e37-4764dacf51d9",
+          "text": "I find and click the link with href \"../fake-landing-page\"",
+          "type": "Action",
+          "astNodeIds": [
+            "139736ff-6278-4bac-b918-e6c674b942d4"
+          ]
+        },
+        {
+          "id": "a906e7b7-c822-48f8-af60-882dbe2bc571",
+          "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/fake-landing-page\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "d70824a4-5290-49f4-9168-7ad745260474"
+          ]
+        },
+        {
+          "id": "9971c5b5-a9ea-4db8-a6c5-0e8f037020d5",
+          "text": "I find and click the link with href \"https://ultimateqa.com/sample-application-lifecycle-sprint-1/\"",
+          "type": "Action",
+          "astNodeIds": [
+            "15d73497-8934-4c7c-82bb-cf42ebb38cd8"
+          ]
+        },
+        {
+          "id": "e494d405-b077-48f5-80da-90415d8796fb",
+          "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/sample-application-lifecycle-sprint-1/\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "39fbfd91-e05b-4fcb-bb66-bbf072bee760"
+          ]
+        },
+        {
+          "id": "97e8fa21-cc06-42f4-8c5c-adcb1c59fbde",
+          "text": "I find and click the link with href \"http://courses.ultimateqa.com/users/sign_in\"",
+          "type": "Action",
+          "astNodeIds": [
+            "2f71399e-53e4-49a3-a850-2a2fbcc1597b"
+          ]
+        },
+        {
+          "id": "e29928cd-3f0a-4f6d-8650-0c382783e5ed",
+          "text": "I should be redirected to the page with URL containing \"https://courses.ultimateqa.com/users/sign_in\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "5355c5d0-16c0-4c1a-8858-1b1990d47e75"
+          ]
+        },
+        {
+          "id": "c4fa8374-9987-41ba-a23a-578ea32c2f73",
+          "text": "I find and click the link with href \"../simple-html-elements-for-automation/\"",
+          "type": "Action",
+          "astNodeIds": [
+            "657da703-7088-444b-af39-397f66d6727c"
+          ]
+        },
+        {
+          "id": "aaeeb5c0-af24-4706-b366-ed75d134e89b",
+          "text": "I should be redirected to the page with URL containing \"https://ultimateqa.com/simple-html-elements-for-automation/\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "89ca7db8-b138-4089-bb24-b6b36df19ff6"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4832a4a9-ae50-4e1b-9f78-ead8b94bca42",
+      "uri": "features/rijksmuseum.feature",
+      "astNodeIds": [
+        "72fac703-ac28-4039-a70e-d896e85e5c4f"
+      ],
+      "tags": [
+        {
+          "name": "@title",
+          "astNodeId": "34cb0a2a-49fb-45c5-947e-2c8f678ee921"
+        }
+      ],
+      "name": "The user opens the Automation Practice homepage and checks the title",
+      "language": "en",
+      "steps": [
+        {
+          "id": "d4baf64a-c8a0-4e10-a952-df125228237c",
+          "text": "I open the Automation Practice page",
+          "type": "Context",
+          "astNodeIds": [
+            "28754f42-26d8-4a1f-bc1d-9602248911b4"
+          ]
+        },
+        {
+          "id": "bdc4b077-453f-4a55-ad70-fdbceda45326",
+          "text": "the page title should be \"Automation Practice - Ultimate QA\"",
+          "type": "Outcome",
+          "astNodeIds": [
+            "81a8858a-1149-4c13-becf-8273abeccdda"
+          ]
+        }
+      ]
+    }
+  ],
+  "stepDefinition": [
+    {
+      "id": "bfcb1289-2b79-45e9-859c-84af452a2cfb",
+      "pattern": {
+        "source": "I open the Automation Practice page for links",
+        "type": "CUCUMBER_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "features/step_definitions/linksVal.js",
+        "location": {
+          "line": 4
+        }
+      }
+    },
+    {
+      "id": "ac6c985e-7801-4219-8b4d-3e70cc77873a",
+      "pattern": {
+        "source": "I find and click the link with href {string}",
+        "type": "CUCUMBER_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "features/step_definitions/linksVal.js",
+        "location": {
+          "line": 10
+        }
+      }
+    },
+    {
+      "id": "2b3dad48-8d78-4f28-9fea-668d396096a7",
+      "pattern": {
+        "source": "I should be redirected to the page with URL containing {string}",
+        "type": "CUCUMBER_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "features/step_definitions/linksVal.js",
+        "location": {
+          "line": 19
+        }
+      }
+    },
+    {
+      "id": "263ad010-1d03-43e5-8ac5-5c847a9fceb5",
+      "pattern": {
+        "source": "I open the Automation Practice page",
+        "type": "CUCUMBER_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "features/step_definitions/rijksmuseum.js",
+        "location": {
+          "line": 4
+        }
+      }
+    },
+    {
+      "id": "4c71395f-4471-4483-80a0-81d93c7dcd57",
+      "pattern": {
+        "source": "the page title should be {string}",
+        "type": "CUCUMBER_EXPRESSION"
+      },
+      "sourceReference": {
+        "uri": "features/step_definitions/rijksmuseum.js",
+        "location": {
+          "line": 9
+        }
+      }
+    }
+  ],
+  "hooks": [
+    {
+      "id": "b842c52d-e6f1-4b78-91e0-30bedc4e0534",
+      "type": "BEFORE_TEST_CASE",
+      "sourceReference": {
+        "uri": "node_modules/nightwatch/lib/runner/test-runners/cucumber/_setup_cucumber_runner.js",
+        "location": {
+          "line": 6
+        }
+      }
+    },
+    {
+      "id": "821389bd-4b1e-4a22-b1b8-f4e34db903d6",
+      "type": "BEFORE_TEST_CASE",
+      "sourceReference": {
+        "uri": "node_modules/@nightwatch/browserstack/nightwatch/observabilityLogPatcherHook.js",
+        "location": {
+          "line": 4
+        }
+      }
+    },
+    {
+      "id": "a46a162a-8630-440c-9970-b5896ba72904",
+      "type": "AFTER_TEST_CASE",
+      "sourceReference": {
+        "uri": "node_modules/nightwatch/lib/runner/test-runners/cucumber/_setup_cucumber_runner.js",
+        "location": {
+          "line": 69
+        }
+      }
+    },
+    {
+      "id": "7445f758-1349-4670-8648-1e4f6aeb565f",
+      "type": "AFTER_TEST_CASE",
+      "sourceReference": {
+        "uri": "features/step_definitions/linksVal.js",
+        "location": {
+          "line": 27
+        }
+      }
+    },
+    {
+      "id": "a2ea3fdb-f2e1-4a57-8ee6-01460aa3edc7",
+      "type": "BEFORE_TEST_RUN",
+      "sourceReference": {
+        "uri": "features/support/hoooks.js",
+        "location": {
+          "line": 4
+        }
+      }
+    },
+    {
+      "id": "37aa1296-744d-4618-a374-883a4295f51c",
+      "type": "AFTER_TEST_RUN",
+      "sourceReference": {
+        "uri": "features/support/hoooks.js",
+        "location": {
+          "line": 14
+        }
+      }
+    }
+  ],
+  "testRunStarted": {
+    "id": "7e4c29f6-f3d4-4870-acca-7da31d767865",
+    "timestamp": {
+      "seconds": 1737446087,
+      "nanos": 727000000
+    }
+  },
+  "testCases": [
+    {
+      "testRunStartedId": "7e4c29f6-f3d4-4870-acca-7da31d767865",
+      "pickleId": "aa9c355b-2a16-499d-8d55-3423ef279498",
+      "id": "f5c37e9d-de3d-4327-b42b-b863d860c64b",
+      "testSteps": [
+        {
+          "id": "d5b3730d-c264-4831-bd1b-3ab2d85842f9",
+          "hookId": "b842c52d-e6f1-4b78-91e0-30bedc4e0534"
+        },
+        {
+          "id": "6458602b-5e50-468a-8cf3-104e84d492e3",
+          "hookId": "821389bd-4b1e-4a22-b1b8-f4e34db903d6"
+        },
+        {
+          "id": "6a1381cb-096b-4d92-8423-205a560ed399",
+          "pickleStepId": "48559791-3c0c-4532-be9a-222210680816",
+          "stepDefinitionIds": [
+            "bfcb1289-2b79-45e9-859c-84af452a2cfb"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "63d726ba-9f92-4506-a983-a0a7350cce1a",
+          "pickleStepId": "5a62ae17-fc87-46c3-b570-da5a890d1333",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"../complicated-page\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "../complicated-page",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5943de43-a434-4d7a-879d-ff2ff07bb1d5",
+          "pickleStepId": "82e785b1-7ceb-44b0-b85f-a86095ba8aa7",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://ultimateqa.com/complicated-page\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://ultimateqa.com/complicated-page",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "db30efc9-6310-47b8-b26b-a7c174776953",
+          "pickleStepId": "a83680ea-484a-4b9a-a2e4-630f62a3a417",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"../fake-pricing-page\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "../fake-pricing-page",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8eb702b6-24ed-42a4-aab8-9874f995fd41",
+          "pickleStepId": "f50ec5e5-fd63-4c08-856b-cfc435fe11eb",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://ultimateqa.com/automation/fake-pricing-page/\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://ultimateqa.com/automation/fake-pricing-page/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cec6c566-a52d-40b0-b9e7-1753c2c7b684",
+          "pickleStepId": "49e6d3de-ad21-4549-b1d0-82b3b58786c9",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"https://ultimateqa.com/filling-out-forms/\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "https://ultimateqa.com/filling-out-forms/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "348d972b-993c-4ab5-a3df-7abd860bb931",
+          "pickleStepId": "20a1132a-2cca-4050-a2e4-5d93f75cd71c",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://ultimateqa.com/filling-out-forms/\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://ultimateqa.com/filling-out-forms/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e4bf6e92-d643-4242-94ef-f2afe29b2068",
+          "pickleStepId": "e4cbe832-9d96-4b4e-8e37-4764dacf51d9",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"../fake-landing-page\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "../fake-landing-page",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a946ac13-24c9-43c9-b96c-b2af339f5724",
+          "pickleStepId": "a906e7b7-c822-48f8-af60-882dbe2bc571",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://ultimateqa.com/fake-landing-page\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://ultimateqa.com/fake-landing-page",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1205840-dc1f-4df1-bd39-2530d13cd5ce",
+          "pickleStepId": "9971c5b5-a9ea-4db8-a6c5-0e8f037020d5",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"https://ultimateqa.com/sample-application-lifecycle-sprint-1/\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "https://ultimateqa.com/sample-application-lifecycle-sprint-1/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d852f194-4e6f-49e0-be3f-119b173ed9b9",
+          "pickleStepId": "e494d405-b077-48f5-80da-90415d8796fb",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://ultimateqa.com/sample-application-lifecycle-sprint-1/\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://ultimateqa.com/sample-application-lifecycle-sprint-1/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2c126e9e-7f4c-48a7-9dc3-59eb26d1b190",
+          "pickleStepId": "97e8fa21-cc06-42f4-8c5c-adcb1c59fbde",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"http://courses.ultimateqa.com/users/sign_in\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "http://courses.ultimateqa.com/users/sign_in",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4fbd6df3-927f-4b85-926d-fc70edecb346",
+          "pickleStepId": "e29928cd-3f0a-4f6d-8650-0c382783e5ed",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://courses.ultimateqa.com/users/sign_in\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://courses.ultimateqa.com/users/sign_in",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "26926ba8-13af-4ac7-817e-4824c355b2b9",
+          "pickleStepId": "c4fa8374-9987-41ba-a23a-578ea32c2f73",
+          "stepDefinitionIds": [
+            "ac6c985e-7801-4219-8b4d-3e70cc77873a"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 36,
+                    "value": "\"../simple-html-elements-for-automation/\"",
+                    "children": [
+                      {
+                        "start": 37,
+                        "value": "../simple-html-elements-for-automation/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "287f4987-ebec-43d9-8de4-67843a896cf4",
+          "pickleStepId": "aaeeb5c0-af24-4706-b366-ed75d134e89b",
+          "stepDefinitionIds": [
+            "2b3dad48-8d78-4f28-9fea-668d396096a7"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 55,
+                    "value": "\"https://ultimateqa.com/simple-html-elements-for-automation/\"",
+                    "children": [
+                      {
+                        "start": 56,
+                        "value": "https://ultimateqa.com/simple-html-elements-for-automation/",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2634ce33-c232-441e-951b-93f82d829d9b",
+          "hookId": "7445f758-1349-4670-8648-1e4f6aeb565f"
+        },
+        {
+          "id": "a3195d5d-8e97-4a76-bd49-58b72fea7243",
+          "hookId": "a46a162a-8630-440c-9970-b5896ba72904"
+        }
+      ]
+    },
+    {
+      "testRunStartedId": "7e4c29f6-f3d4-4870-acca-7da31d767865",
+      "pickleId": "4832a4a9-ae50-4e1b-9f78-ead8b94bca42",
+      "id": "65d97c47-f6b0-4509-a4cf-332e83e43fbd",
+      "testSteps": [
+        {
+          "id": "d0c5c065-4cc6-4217-a0be-e0e78cb053c7",
+          "hookId": "b842c52d-e6f1-4b78-91e0-30bedc4e0534"
+        },
+        {
+          "id": "3bef6bb0-ca39-4ce2-9663-19cc9c5606a5",
+          "hookId": "821389bd-4b1e-4a22-b1b8-f4e34db903d6"
+        },
+        {
+          "id": "7fb3896e-4c0d-49ac-af1a-5e90e89f5c2b",
+          "pickleStepId": "d4baf64a-c8a0-4e10-a952-df125228237c",
+          "stepDefinitionIds": [
+            "263ad010-1d03-43e5-8ac5-5c847a9fceb5"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": []
+            }
+          ]
+        },
+        {
+          "id": "9719009c-9ed5-48d8-89c0-41cd54a54475",
+          "pickleStepId": "bdc4b077-453f-4a55-ad70-fdbceda45326",
+          "stepDefinitionIds": [
+            "4c71395f-4471-4483-80a0-81d93c7dcd57"
+          ],
+          "stepMatchArgumentsLists": [
+            {
+              "stepMatchArguments": [
+                {
+                  "group": {
+                    "start": 25,
+                    "value": "\"Automation Practice - Ultimate QA\"",
+                    "children": [
+                      {
+                        "start": 26,
+                        "value": "Automation Practice - Ultimate QA",
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      },
+                      {
+                        "children": [
+                          {
+                            "children": []
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "parameterTypeName": "string"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "85358a6b-2885-4d99-8dd4-48bee6ad3f01",
+          "hookId": "7445f758-1349-4670-8648-1e4f6aeb565f"
+        },
+        {
+          "id": "9ffa1de9-4bb1-4ec5-bf78-6eb1def5312d",
+          "hookId": "a46a162a-8630-440c-9970-b5896ba72904"
+        }
+      ]
+    }
+  ],
+  "testCaseStarted": {
+    "6dd1e92f-adbf-425b-8929-f22a3e6c04c1": {
+      "attempt": 0,
+      "testCaseId": "f5c37e9d-de3d-4327-b42b-b863d860c64b",
+      "id": "6dd1e92f-adbf-425b-8929-f22a3e6c04c1",
+      "timestamp": {
+        "seconds": 1737446087,
+        "nanos": 737000000
+      }
+    },
+    "5490417d-2e82-4c6c-94f4-1f8dd180347d": {
+      "attempt": 0,
+      "testCaseId": "65d97c47-f6b0-4509-a4cf-332e83e43fbd",
+      "id": "5490417d-2e82-4c6c-94f4-1f8dd180347d",
+      "timestamp": {
+        "seconds": 1737446153,
+        "nanos": 413000000
+      }
+    }
+  },
+  "testStepStarted": {
+    "6dd1e92f-adbf-425b-8929-f22a3e6c04c1": {
+      "testCaseStartedId": "6dd1e92f-adbf-425b-8929-f22a3e6c04c1",
+      "testStepId": "a3195d5d-8e97-4a76-bd49-58b72fea7243",
+      "timestamp": {
+        "seconds": 1737446151,
+        "nanos": 89000000
+      }
+    },
+    "5490417d-2e82-4c6c-94f4-1f8dd180347d": {
+      "testCaseStartedId": "5490417d-2e82-4c6c-94f4-1f8dd180347d",
+      "testStepId": "9ffa1de9-4bb1-4ec5-bf78-6eb1def5312d",
+      "timestamp": {
+        "seconds": 1737446170,
+        "nanos": 963000000
+      }
+    }
+  },
+  "session": {
+    "6dd1e92f-adbf-425b-8929-f22a3e6c04c1": {
+      "sessionId": "d956518be29769710e38fb3683afb5691a006f96",
+      "capabilities": {
+        "acceptInsecureCerts": false,
+        "browserName": "chrome",
+        "browserVersion": "132.0.6834.84",
+        "chrome": {
+          "chromedriverVersion": "132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})",
+          "userDataDir": "/var/folders/yj/h3bj394n2tn74bp3vdngj35c0000jy/T/.org.chromium.Chromium.AXjfWG"
+        },
+        "fedcm:accounts": true,
+        "goog:chromeOptions": {
+          "debuggerAddress": "localhost:55097"
+        },
+        "networkConnectionEnabled": false,
+        "pageLoadStrategy": "normal",
+        "platformName": "mac",
+        "proxy": {},
+        "se:cdpVersion": "132.0.6834.84",
+        "setWindowRect": true,
+        "strictFileInteractability": false,
+        "timeouts": {
+          "implicit": 3000,
+          "pageLoad": 300000,
+          "script": 30000
+        },
+        "unhandledPromptBehavior": "dismiss and notify",
+        "webauthn:extension:credBlob": true,
+        "webauthn:extension:largeBlob": true,
+        "webauthn:extension:minPinLength": true,
+        "webauthn:extension:prf": true,
+        "webauthn:virtualAuthenticators": true
+      },
+      "host": "hub.browserstack.com",
+      "port": 443,
+      "testCaseStartedId": "6dd1e92f-adbf-425b-8929-f22a3e6c04c1"
+    },
+    "5490417d-2e82-4c6c-94f4-1f8dd180347d": {
+      "sessionId": "343eede44dd91cb42f7c3761c7701c84f028887c",
+      "capabilities": {
+        "acceptInsecureCerts": false,
+        "browserName": "chrome",
+        "browserVersion": "132.0.6834.84",
+        "chrome": {
+          "chromedriverVersion": "132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})",
+          "userDataDir": "/var/folders/yj/h3bj394n2tn74bp3vdngj35c0000jy/T/.org.chromium.Chromium.E1xJ1Y"
+        },
+        "fedcm:accounts": true,
+        "goog:chromeOptions": {
+          "debuggerAddress": "localhost:54540"
+        },
+        "networkConnectionEnabled": false,
+        "pageLoadStrategy": "normal",
+        "platformName": "mac",
+        "proxy": {},
+        "se:cdpVersion": "132.0.6834.84",
+        "setWindowRect": true,
+        "strictFileInteractability": false,
+        "timeouts": {
+          "implicit": 3000,
+          "pageLoad": 300000,
+          "script": 30000
+        },
+        "unhandledPromptBehavior": "dismiss and notify",
+        "webauthn:extension:credBlob": true,
+        "webauthn:extension:largeBlob": true,
+        "webauthn:extension:minPinLength": true,
+        "webauthn:extension:prf": true,
+        "webauthn:virtualAuthenticators": true
+      },
+      "host": "hub.browserstack.com",
+      "port": 443,
+      "testCaseStartedId": "5490417d-2e82-4c6c-94f4-1f8dd180347d"
+    }
+  },
+  "testStepFinished": {
+    "6dd1e92f-adbf-425b-8929-f22a3e6c04c1": {
+      "testCaseStartedId": "6dd1e92f-adbf-425b-8929-f22a3e6c04c1",
+      "testStepId": "a3195d5d-8e97-4a76-bd49-58b72fea7243",
+      "testStepResult": {
+        "duration": {
+          "seconds": 2,
+          "nanos": 321247916
+        },
+        "status": "PASSED"
+      },
+      "timestamp": {
+        "seconds": 1737446153,
+        "nanos": 410000000
+      },
+      "httpOutput": [
+        [
+          "2025-01-21T07:55:51.091Z",
+          "  Request GET https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json  ",
+          "\u001b[90mundefined\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:51.511Z",
+          "  Response 200 GET https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json (420ms)",
+          "{\n     automation_session: {\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       duration: \u001b[1mnull\u001b[22m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       status: \u001b[32m&#39;running&#39;\u001b[39m,\n       hashed_id: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m,\n       logs: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96/logs&#39;\u001b[39m,\n       browserstack_status: \u001b[32m&#39;running&#39;\u001b[39m,\n       created_at: \u001b[32m&#39;2025-01-21T07:54:49.000Z&#39;\u001b[39m,\n       browser_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       public_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96?auth_token=ed93a8946824528b41febb32352ed5a7a7204f3acec9e99c4ba94f3335c49cea&#39;\u001b[39m,\n       video_url: \u001b[32m&#39;https://automate.browserstack.com/sessions/d956518be29769710e38fb3683afb5691a006f96/video?token=MXBIUzRLMjBCSDR1aU5SYTE4QWd4eENTYW4vck1SM0ZGSTd1aVd4WUNtZmFDNlMyUVhWcFVZbENmVkVvcS9rVjFweDBhTWRhUUlQOXNHaEFUVGNhSkE9PS0tcDF4KzJXSWhlZHRtNEJWVVJVdW40Zz09--22b474d8b6722178114cd79116391fa2ba50b241&amp;source=rest_api&amp;diff=-1&#39;\u001b[39m,\n       browser_console_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-aps/s3.ap-south-1/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ca07bd4b0f96279a03beba3dd4c1a6d569eceac0b2b0cc7d4d76a3c01af460af&#39;\u001b[39m,\n       har_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=475011ea31b3b4ce439ff298c2c89a164d388ce46261996a7a87f8c234eab96f&#39;\u001b[39m,\n       selenium_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=afa785a82e322575f210d21c0bdc0aa56ab200a2c7c5dcd2dd5509bfb2771f3f&#39;\u001b[39m,\n       selenium_telemetry_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-jaeger_spans.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a28c86ed012bd6169119528a6b39e07ff66b0c8bd70abc1aac349f31464b656f&#39;\u001b[39m,\n       session_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/d956518be29769710e38fb3683afb5691a006f96-terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fee6b59dedc9d36c25378ccf73df794c1494909db016633dead2edbad62c8eca&#39;\u001b[39m,\n       build_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4322292f144bbeacee4ee90946cc98f24a0144e664eadf2bfb9cfa78874319ea&#39;\u001b[39m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:55:51.513Z",
+          "  Request PUT https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json  ",
+          "{ status: \u001b[32m&#39;passed&#39;\u001b[39m, reason: \u001b[32m&#39;&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:51.899Z",
+          "  Response 200 PUT https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json (386ms)",
+          "{\n     automation_session: {\n       hashed_id: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       status: \u001b[32m&#39;passed&#39;\u001b[39m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       duration: \u001b[1mnull\u001b[22m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:55:51.905Z",
+          "  Request DELETE https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:53.407Z",
+          "  Response 200 DELETE https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96 (1502ms)",
+          "{ state: \u001b[32m&#39;success&#39;\u001b[39m, status: \u001b[33m0\u001b[39m, value: \u001b[32m&#39;&#39;\u001b[39m, hCode: \u001b[32m&#39;13579246&#39;\u001b[39m }"
+        ]
+      ]
+    },
+    "5490417d-2e82-4c6c-94f4-1f8dd180347d": {
+      "testCaseStartedId": "5490417d-2e82-4c6c-94f4-1f8dd180347d",
+      "testStepId": "9ffa1de9-4bb1-4ec5-bf78-6eb1def5312d",
+      "testStepResult": {
+        "duration": {
+          "seconds": 3,
+          "nanos": 429962792
+        },
+        "status": "PASSED"
+      },
+      "timestamp": {
+        "seconds": 1737446174,
+        "nanos": 393000000
+      },
+      "httpOutput": [
+        [
+          "2025-01-21T07:56:10.964Z",
+          "  Request GET https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json  ",
+          "\u001b[90mundefined\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:56:12.274Z",
+          "  Response 200 GET https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json (1308ms)",
+          "{\n     automation_session: {\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       duration: \u001b[1mnull\u001b[22m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       status: \u001b[32m&#39;running&#39;\u001b[39m,\n       hashed_id: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m,\n       logs: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c/logs&#39;\u001b[39m,\n       browserstack_status: \u001b[32m&#39;running&#39;\u001b[39m,\n       created_at: \u001b[32m&#39;2025-01-21T07:55:54.000Z&#39;\u001b[39m,\n       browser_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       public_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c?auth_token=b9318a4d8f564e402c54e46ed1fe600af6f2bd4ac8d31571c66e96fa52a60882&#39;\u001b[39m,\n       video_url: \u001b[32m&#39;https://automate.browserstack.com/sessions/343eede44dd91cb42f7c3761c7701c84f028887c/video?token=b0lGdTlnM2dFa3FIMWlnL0IzMFYyK05tRHZiclVxRUtSeTlGdkNSY1FSNXFuNHBoUTBUbFo3QmUvcEM0REt1Tm0vRi9QdWNUK3NLcER4dUVlVkNRYXc9PS0teFkreVFBNWtvSFFlWm9IVkVLb1ptZz09--80cfb38b6b59df7fa72da182c59ffe89b8a92dd9&amp;source=rest_api&amp;diff=-1&#39;\u001b[39m,\n       browser_console_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-aps/s3.ap-south-1/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f04c2b2cfa9992726b6350af2992f9b6608e4fb05f392c2ce803d6fa298b6b31&#39;\u001b[39m,\n       har_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bf0971c361c6bcd58bef5af37c1bf9bb896dc85abda4d379dc32f94160932fae&#39;\u001b[39m,\n       selenium_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3eecd91d3b989987ced280a96d48f7df7fa4798ff40d70ea418ed94ebf8ff3af&#39;\u001b[39m,\n       selenium_telemetry_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-jaeger_spans.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=49b0fd8f22a913021926dc9c65f5a40b48db49cc60464acf3004dce701774cdc&#39;\u001b[39m,\n       session_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/343eede44dd91cb42f7c3761c7701c84f028887c-terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0437237199ecf983829f6261e05ec6d77c09c8187d926cd7fabd87b7c8c11d9c&#39;\u001b[39m,\n       build_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=29aca3b3a461177badcd2f5c5a74aaf4119673213d7d0fe501a92bfa9b746107&#39;\u001b[39m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:56:12.275Z",
+          "  Request PUT https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json  ",
+          "{ status: \u001b[32m&#39;passed&#39;\u001b[39m, reason: \u001b[32m&#39;&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:56:12.653Z",
+          "  Response 200 PUT https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json (378ms)",
+          "{\n     automation_session: {\n       hashed_id: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       status: \u001b[32m&#39;passed&#39;\u001b[39m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       duration: \u001b[1mnull\u001b[22m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:56:12.658Z",
+          "  Request DELETE https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:56:14.392Z",
+          "  Response 200 DELETE https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c (1734ms)",
+          "{ state: \u001b[32m&#39;success&#39;\u001b[39m, status: \u001b[33m0\u001b[39m, value: \u001b[32m&#39;&#39;\u001b[39m, hCode: \u001b[32m&#39;13579246&#39;\u001b[39m }"
+        ]
+      ]
+    }
+  },
+  "testCaseFinished": {
+    "6dd1e92f-adbf-425b-8929-f22a3e6c04c1": {
+      "testCaseStartedId": "6dd1e92f-adbf-425b-8929-f22a3e6c04c1",
+      "timestamp": {
+        "seconds": 1737446153,
+        "nanos": 410000000
+      },
+      "willBeRetried": false,
+      "httpOutput": [
+        [
+          "2025-01-21T07:54:48.106Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session  ",
+          "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n           source: \u001b[32m&#39;nightwatch:sample-sdk:v1.0&#39;\u001b[39m,\n           seleniumVersion: \u001b[32m&#39;4.0.0&#39;\u001b[39m,\n           userName: \u001b[32m&#39;bhavyananda_j1URsW&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;7MzqwjHuz4zB5mqHLHdF&#39;\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;cmckap0dgoqjevbftnom59nuvkondwiugkmpjefd&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:54:58.009Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session (9903ms)",
+          "{\n     value: {\n       sessionId: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       capabilities: {\n         acceptInsecureCerts: \u001b[33mfalse\u001b[39m,\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         browserVersion: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         chrome: {\n           chromedriverVersion: \u001b[32m&#39;132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})&#39;\u001b[39m,\n           userDataDir: \u001b[32m&#39;/var/folders/yj/h3bj394n2tn74bp3vdngj35c0000jy/T/.org.chromium.Chromium.AXjfWG&#39;\u001b[39m\n         },\n         \u001b[32m&#39;fedcm:accounts&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: { debuggerAddress: \u001b[32m&#39;localhost:55097&#39;\u001b[39m },\n         networkConnectionEnabled: \u001b[33mfalse\u001b[39m,\n         pageLoadStrategy: \u001b[32m&#39;normal&#39;\u001b[39m,\n         platformName: \u001b[32m&#39;mac&#39;\u001b[39m,\n         proxy: {},\n         \u001b[32m&#39;se:cdpVersion&#39;\u001b[39m: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         setWindowRect: \u001b[33mtrue\u001b[39m,\n         strictFileInteractability: \u001b[33mfalse\u001b[39m,\n         timeouts: { implicit: \u001b[33m3000\u001b[39m, pageLoad: \u001b[33m300000\u001b[39m, script: \u001b[33m30000\u001b[39m },\n         unhandledPromptBehavior: \u001b[32m&#39;dismiss and notify&#39;\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:credBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:largeBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:minPinLength&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:prf&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:virtualAuthenticators&#39;\u001b[39m: \u001b[33mtrue\u001b[39m\n       }\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:54:58.015Z",
+          "  Request GET https://api.browserstack.com/automate/builds.json?status=running  ",
+          "\u001b[90mundefined\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:54:58.022Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "{ url: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:54:58.346Z",
+          "  Response 200 GET https://api.browserstack.com/automate/builds.json?status=running (331ms)",
+          "[\n     {\n       automation_build: {\n         name: \u001b[32m&#39;K8S-PLATFORM_WIN_CHROME_SANITY_LIVE_16203&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;3488f3ce1b8d89918c60bcb6330a39e496a75820&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/eWFrSnBTVlpsZlpoV2dIN0NhTjV6VVphQzVTNUFRcm4ydHB2TzBXRmg3WHRnY1dFL0RCQU41QXphYnUyRndKRmN2anNGbXhXdzYxOVMwbUhpYXlCUlE9PS0tQUlwdFZoSSsxeFhGNWlzcVByYXJHZz09--3831d1e50f943d322e134f07cb2366551f2d8afc&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n         duration: \u001b[33m5334787\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/eElBd1Q1SzQ2TDhubFVrdlRJQmo0VjhHT3JmRVJoeDdWMFhhRHJVeTV3NzN4UVpBSkJ1ZWh4ajJuVVhEcHd0THF5TXRuZ2FaaUVyclhOU1ptbkcxdVE9PS0taitrVEF5M2VXendFUDl4b29QdzZTUT09--68055ce371c50bdf5a6db122114ff4bc94185489&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;regression-1: 29454&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;4aa25167876bba82a815cb4a21709949140f5edd&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[32m&#39;regression&#39;\u001b[39m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/eGlNWHBGVVJZQlZ0VWp5YlJXZzU4N2xwemRXMHZ5RHV6cXp6Ynl5Um9hVEVoaDdPN016VUtMdFFuTUpONTlZSkVnVTNHUWM0bC9JZXp1aW1WaGZQNWc9PS0tZkJIZWMzYk5IUjBpaHd0bWNQS2hGQT09--626f85ee8c715883fc80065ba6f9d178677b9892&#39;\u001b[39m\n       }\n     }\n]"
+        ],
+        [
+          "2025-01-21T07:54:59.927Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (1905ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:54:59.939Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../complicated-page&#39;]&quot;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:00.009Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (71ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:00.013Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:00.071Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (58ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:00.082Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../complicated-page&#39;]&quot;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:00.141Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (59ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:00.144Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:00.263Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121/click (119ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:03.270Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:03.328Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (59ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/complicated-page&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:03.334Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:03.436Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (102ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:06.447Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:06.487Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (41ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:06.495Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-pricing-page&#39;]&quot;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:06.537Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (43ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:06.539Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:06.597Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (58ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:06.602Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-pricing-page&#39;]&quot;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:06.674Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (72ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:06.677Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:06.802Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257/click (125ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:09.815Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:09.856Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (42ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/fake-pricing-page/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:09.861Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:09.902Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (41ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:12.908Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:12.945Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (38ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:12.953Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/filling-out-forms/&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:13.003Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (50ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:13.004Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:13.074Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (70ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:13.079Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/filling-out-forms/&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:13.119Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (40ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:13.120Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:13.663Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319/click (542ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:16.692Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:16.741Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (49ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/filling-out-forms/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:16.761Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:16.814Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (53ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:19.822Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:19.857Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (34ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:19.867Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-landing-page&#39;]&quot;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:19.917Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (50ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:19.920Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:19.979Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (59ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:19.983Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-landing-page&#39;]&quot;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:20.023Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (40ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:20.026Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:20.788Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380/click (763ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:23.793Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:23.831Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (38ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/fake-landing-page&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:23.835Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:23.884Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (49ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:26.889Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:26.926Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (38ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:26.931Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/sample-application-lifecycle-sprint-1/&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:26.972Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (41ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:26.973Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:27.062Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (89ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:27.066Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/sample-application-lifecycle-sprint-1/&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:27.106Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (40ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:27.107Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:27.647Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413/click (540ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:30.654Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:30.699Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (45ms)",
+          "{\n     value: \u001b[32m&#39;https://ultimateqa.com/sample-application-lifecycle-sprint-1/&#39;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:30.702Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:30.739Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (37ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:33.745Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:33.785Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (41ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:33.791Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;http://courses.ultimateqa.com/users/sign_in&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:33.833Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (42ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:33.834Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:33.904Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (70ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:33.909Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;http://courses.ultimateqa.com/users/sign_in&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:33.951Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (42ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:33.954Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:37.149Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423/click (3196ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:40.092Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:40.185Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (93ms)",
+          "{ value: \u001b[32m&#39;https://courses.ultimateqa.com/users/sign_in&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:40.188Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:40.229Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (41ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:43.234Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:43.268Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (34ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:43.274Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;../simple-html-elements-for-automation/&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:43.317Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (42ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:43.318Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+          "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:43.390Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (72ms)",
+          "{ value: \u001b[33mtrue\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:43.396Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+          "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;../simple-html-elements-for-automation/&#39;]&quot;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:43.439Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (43ms)",
+          "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m\n       }\n     ]\n  }"
+        ],
+        [
+          "2025-01-21T07:55:43.441Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470/click  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:44.913Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470/click (1472ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:47.921Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:47.957Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (37ms)",
+          "{\n     value: \u001b[32m&#39;https://ultimateqa.com/simple-html-elements-for-automation/&#39;\u001b[39m\n  }"
+        ],
+        [
+          "2025-01-21T07:55:47.962Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+          "{}"
+        ],
+        [
+          "2025-01-21T07:55:48.002Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (40ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:55:51.009Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:51.050Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (41ms)",
+          "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:51.058Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/se/log  ",
+          "{ type: \u001b[32m&#39;browser&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:51.087Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/se/log (30ms)",
+          "{ value: [] }"
+        ],
+        [
+          "2025-01-21T07:55:51.091Z",
+          "  Request GET https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json  ",
+          "\u001b[90mundefined\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:51.511Z",
+          "  Response 200 GET https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json (420ms)",
+          "{\n     automation_session: {\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       duration: \u001b[1mnull\u001b[22m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       status: \u001b[32m&#39;running&#39;\u001b[39m,\n       hashed_id: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m,\n       logs: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96/logs&#39;\u001b[39m,\n       browserstack_status: \u001b[32m&#39;running&#39;\u001b[39m,\n       created_at: \u001b[32m&#39;2025-01-21T07:54:49.000Z&#39;\u001b[39m,\n       browser_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       public_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96?auth_token=ed93a8946824528b41febb32352ed5a7a7204f3acec9e99c4ba94f3335c49cea&#39;\u001b[39m,\n       video_url: \u001b[32m&#39;https://automate.browserstack.com/sessions/d956518be29769710e38fb3683afb5691a006f96/video?token=MXBIUzRLMjBCSDR1aU5SYTE4QWd4eENTYW4vck1SM0ZGSTd1aVd4WUNtZmFDNlMyUVhWcFVZbENmVkVvcS9rVjFweDBhTWRhUUlQOXNHaEFUVGNhSkE9PS0tcDF4KzJXSWhlZHRtNEJWVVJVdW40Zz09--22b474d8b6722178114cd79116391fa2ba50b241&amp;source=rest_api&amp;diff=-1&#39;\u001b[39m,\n       browser_console_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-aps/s3.ap-south-1/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ca07bd4b0f96279a03beba3dd4c1a6d569eceac0b2b0cc7d4d76a3c01af460af&#39;\u001b[39m,\n       har_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=475011ea31b3b4ce439ff298c2c89a164d388ce46261996a7a87f8c234eab96f&#39;\u001b[39m,\n       selenium_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=afa785a82e322575f210d21c0bdc0aa56ab200a2c7c5dcd2dd5509bfb2771f3f&#39;\u001b[39m,\n       selenium_telemetry_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-jaeger_spans.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a28c86ed012bd6169119528a6b39e07ff66b0c8bd70abc1aac349f31464b656f&#39;\u001b[39m,\n       session_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/d956518be29769710e38fb3683afb5691a006f96-terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fee6b59dedc9d36c25378ccf73df794c1494909db016633dead2edbad62c8eca&#39;\u001b[39m,\n       build_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4322292f144bbeacee4ee90946cc98f24a0144e664eadf2bfb9cfa78874319ea&#39;\u001b[39m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:55:51.513Z",
+          "  Request PUT https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json  ",
+          "{ status: \u001b[32m&#39;passed&#39;\u001b[39m, reason: \u001b[32m&#39;&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:55:51.899Z",
+          "  Response 200 PUT https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json (386ms)",
+          "{\n     automation_session: {\n       hashed_id: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       status: \u001b[32m&#39;passed&#39;\u001b[39m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       duration: \u001b[1mnull\u001b[22m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:55:51.905Z",
+          "  Request DELETE https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:55:53.407Z",
+          "  Response 200 DELETE https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96 (1502ms)",
+          "{ state: \u001b[32m&#39;success&#39;\u001b[39m, status: \u001b[33m0\u001b[39m, value: \u001b[32m&#39;&#39;\u001b[39m, hCode: \u001b[32m&#39;13579246&#39;\u001b[39m }"
+        ]
+      ]
+    },
+    "5490417d-2e82-4c6c-94f4-1f8dd180347d": {
+      "testCaseStartedId": "5490417d-2e82-4c6c-94f4-1f8dd180347d",
+      "timestamp": {
+        "seconds": 1737446174,
+        "nanos": 394000000
+      },
+      "willBeRetried": false,
+      "httpOutput": [
+        [
+          "2025-01-21T07:55:53.465Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session  ",
+          "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n           source: \u001b[32m&#39;nightwatch:sample-sdk:v1.0&#39;\u001b[39m,\n           seleniumVersion: \u001b[32m&#39;4.0.0&#39;\u001b[39m,\n           userName: \u001b[32m&#39;bhavyananda_j1URsW&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;7MzqwjHuz4zB5mqHLHdF&#39;\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;cmckap0dgoqjevbftnom59nuvkondwiugkmpjefd&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:56:08.401Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session (14934ms)",
+          "{\n     value: {\n       sessionId: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       capabilities: {\n         acceptInsecureCerts: \u001b[33mfalse\u001b[39m,\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         browserVersion: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         chrome: {\n           chromedriverVersion: \u001b[32m&#39;132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})&#39;\u001b[39m,\n           userDataDir: \u001b[32m&#39;/var/folders/yj/h3bj394n2tn74bp3vdngj35c0000jy/T/.org.chromium.Chromium.E1xJ1Y&#39;\u001b[39m\n         },\n         \u001b[32m&#39;fedcm:accounts&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: { debuggerAddress: \u001b[32m&#39;localhost:54540&#39;\u001b[39m },\n         networkConnectionEnabled: \u001b[33mfalse\u001b[39m,\n         pageLoadStrategy: \u001b[32m&#39;normal&#39;\u001b[39m,\n         platformName: \u001b[32m&#39;mac&#39;\u001b[39m,\n         proxy: {},\n         \u001b[32m&#39;se:cdpVersion&#39;\u001b[39m: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         setWindowRect: \u001b[33mtrue\u001b[39m,\n         strictFileInteractability: \u001b[33mfalse\u001b[39m,\n         timeouts: { implicit: \u001b[33m3000\u001b[39m, pageLoad: \u001b[33m300000\u001b[39m, script: \u001b[33m30000\u001b[39m },\n         unhandledPromptBehavior: \u001b[32m&#39;dismiss and notify&#39;\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:credBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:largeBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:minPinLength&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:prf&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:virtualAuthenticators&#39;\u001b[39m: \u001b[33mtrue\u001b[39m\n       }\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:56:08.408Z",
+          "  Request GET https://api.browserstack.com/automate/builds.json?status=running  ",
+          "\u001b[90mundefined\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:56:08.414Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/url  ",
+          "{ url: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:56:08.710Z",
+          "  Response 200 GET https://api.browserstack.com/automate/builds.json?status=running (301ms)",
+          "[\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack-build-wdio-1 21-Jan-13:26&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;a746b005c3606d295f492da77d636de810a0fa66&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/Yll5SS9HVDVFYSt0WHRLTkQ0cHRsWXZDdWJLOTg2d3BSUXpxejlkOFVtd3pnNThMLzhUVENmWjF5SG9KWnNzZTA3TUpNTVovQXA0eXZKTzVrb2FoRGc9PS0tTnZSbjNLZGFudDJuQUx0TkV1aUdDQT09--23d78026016f5ed39ee29ad0a4394f2509932117&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;jenkins-BrowserStack Sales Demo-8565&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;1e3e263431ac3a6e25f770fab717ea1f99ca69e7&#39;\u001b[39m,\n         duration: \u001b[33m61\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/S3gxTkRmKzJ1LzlQS1ExMWhLOGdDKzFtK3I1WXN2V05vUkgxL2hkYXQvRFA4L0xhbzJLOEEyZ2YxcDBhVW1EUHBtcUV1SDRLQWdNWjEwWEFQU3FMOHc9PS0tQ21udmsvcERkRHBBam45bHQzMEpnZz09--6defb6b0a9ddcbb737685626ffb6dc0a75c4cdbe&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n         duration: \u001b[33m5334951\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/M1dqM1AwZi93WE1MNjVjMjhKS2g0cG1pelJhSmhVTmNPRGRYMWJMN2p2REVZKzRjeTFXS0Nna3FmZUJmZnk0aUVaUEhLZXo2eFBqWmh0MXMyajlsY0E9PS0tNHRDcEZEcE1TbTlBK1lrd2ovTzhtQT09--bb1b058fc3acbcd443b992b830192b6c905df3fd&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack build YPS zenni  259&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;21b28b20e6205ac4cef2cac3aedbc8df8f07c165&#39;\u001b[39m,\n         duration: \u001b[33m26\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/RktXM0VqbFNYMStrbW5uaXNETFpIRjZJY2FpMTloVHNnZ09UaEhQakZQa0NCT3BiT3FtS3BEK1BiSGt5Z1FsL2pnV0dxUlVrUWw2bUpxdENQL2dOR0E9PS0tUytVRFZDcjV2ZjRXbU9CMW15WnRlZz09--0d8a515b48a20ff1ba8ff2047e5b15e23e1619e9&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;K8S-PLATFORM_WIN_CHROME_SANITY_LIVE_16203&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;3488f3ce1b8d89918c60bcb6330a39e496a75820&#39;\u001b[39m,\n         duration: \u001b[33m82\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/OUIvdzBnRkJTNXJvVmo3dnU4TWl1TGhMbGI1RTR4eGorejhWcVRJVVlkc1VvUW5haHhtZVhyN1U4RGtzVTF6ODdLdjdlSU9GWlUvSGo5NkJhYTVnY0E9PS0tNVhqY0xEMThnOWVFWnBFdkNoL05yZz09--b6a9a8dc1db6763f926913374a3ced8a9c872e9e&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;regression-1: 29454&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;4aa25167876bba82a815cb4a21709949140f5edd&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[32m&#39;regression&#39;\u001b[39m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/OGhKMnRMd1lFODN1UDZHYXZhL2RCK2c4TERnTkdFVk52bEw0Mk5wNVVrM0x6ZWJSZWEyY1hoVlVOSzBKUmNyUVNNWXB3UkhIMEZYalFrVUJvVXpNY1E9PS0tZ1MwS2FwWmdsTTdWa1ViNWlvTGJvZz09--7c15b69022c360d28fe5d79719e023ffda084b7b&#39;\u001b[39m\n       }\n     }\n]"
+        ],
+        [
+          "2025-01-21T07:56:10.815Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/url (2401ms)",
+          "{ value: \u001b[1mnull\u001b[22m }"
+        ],
+        [
+          "2025-01-21T07:56:10.821Z",
+          "  Request GET https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/title  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:56:10.909Z",
+          "  Response 200 GET https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/title (88ms)",
+          "{ value: \u001b[32m&#39;Automation Practice - Ultimate QA&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:56:10.917Z",
+          "  Request POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/se/log  ",
+          "{ type: \u001b[32m&#39;browser&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:56:10.962Z",
+          "  Response 200 POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/se/log (45ms)",
+          "{ value: [] }"
+        ],
+        [
+          "2025-01-21T07:56:10.964Z",
+          "  Request GET https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json  ",
+          "\u001b[90mundefined\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:56:12.274Z",
+          "  Response 200 GET https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json (1308ms)",
+          "{\n     automation_session: {\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       duration: \u001b[1mnull\u001b[22m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       status: \u001b[32m&#39;running&#39;\u001b[39m,\n       hashed_id: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m,\n       logs: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c/logs&#39;\u001b[39m,\n       browserstack_status: \u001b[32m&#39;running&#39;\u001b[39m,\n       created_at: \u001b[32m&#39;2025-01-21T07:55:54.000Z&#39;\u001b[39m,\n       browser_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       public_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c?auth_token=b9318a4d8f564e402c54e46ed1fe600af6f2bd4ac8d31571c66e96fa52a60882&#39;\u001b[39m,\n       video_url: \u001b[32m&#39;https://automate.browserstack.com/sessions/343eede44dd91cb42f7c3761c7701c84f028887c/video?token=b0lGdTlnM2dFa3FIMWlnL0IzMFYyK05tRHZiclVxRUtSeTlGdkNSY1FSNXFuNHBoUTBUbFo3QmUvcEM0REt1Tm0vRi9QdWNUK3NLcER4dUVlVkNRYXc9PS0teFkreVFBNWtvSFFlWm9IVkVLb1ptZz09--80cfb38b6b59df7fa72da182c59ffe89b8a92dd9&amp;source=rest_api&amp;diff=-1&#39;\u001b[39m,\n       browser_console_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-aps/s3.ap-south-1/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f04c2b2cfa9992726b6350af2992f9b6608e4fb05f392c2ce803d6fa298b6b31&#39;\u001b[39m,\n       har_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bf0971c361c6bcd58bef5af37c1bf9bb896dc85abda4d379dc32f94160932fae&#39;\u001b[39m,\n       selenium_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3eecd91d3b989987ced280a96d48f7df7fa4798ff40d70ea418ed94ebf8ff3af&#39;\u001b[39m,\n       selenium_telemetry_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-jaeger_spans.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=49b0fd8f22a913021926dc9c65f5a40b48db49cc60464acf3004dce701774cdc&#39;\u001b[39m,\n       session_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/343eede44dd91cb42f7c3761c7701c84f028887c-terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0437237199ecf983829f6261e05ec6d77c09c8187d926cd7fabd87b7c8c11d9c&#39;\u001b[39m,\n       build_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=29aca3b3a461177badcd2f5c5a74aaf4119673213d7d0fe501a92bfa9b746107&#39;\u001b[39m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:56:12.275Z",
+          "  Request PUT https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json  ",
+          "{ status: \u001b[32m&#39;passed&#39;\u001b[39m, reason: \u001b[32m&#39;&#39;\u001b[39m }"
+        ],
+        [
+          "2025-01-21T07:56:12.653Z",
+          "  Response 200 PUT https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json (378ms)",
+          "{\n     automation_session: {\n       hashed_id: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       status: \u001b[32m&#39;passed&#39;\u001b[39m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       duration: \u001b[1mnull\u001b[22m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m\n     }\n  }"
+        ],
+        [
+          "2025-01-21T07:56:12.658Z",
+          "  Request DELETE https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c  ",
+          "\u001b[32m&#39;&#39;\u001b[39m"
+        ],
+        [
+          "2025-01-21T07:56:14.392Z",
+          "  Response 200 DELETE https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c (1734ms)",
+          "{ state: \u001b[32m&#39;success&#39;\u001b[39m, status: \u001b[33m0\u001b[39m, value: \u001b[32m&#39;&#39;\u001b[39m, hCode: \u001b[32m&#39;13579246&#39;\u001b[39m }"
+        ]
+      ]
+    }
+  },
+  "testRunFinished": {
+    "testRunStartedId": "7e4c29f6-f3d4-4870-acca-7da31d767865",
+    "timestamp": {
+      "seconds": 1737446174,
+      "nanos": 395000000
+    },
+    "success": true,
+    "httpOutput": [
+      [
+        "2025-01-21T07:54:48.106Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session  ",
+        "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n           source: \u001b[32m&#39;nightwatch:sample-sdk:v1.0&#39;\u001b[39m,\n           seleniumVersion: \u001b[32m&#39;4.0.0&#39;\u001b[39m,\n           userName: \u001b[32m&#39;bhavyananda_j1URsW&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;7MzqwjHuz4zB5mqHLHdF&#39;\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;cmckap0dgoqjevbftnom59nuvkondwiugkmpjefd&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:54:58.009Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session (9903ms)",
+        "{\n     value: {\n       sessionId: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       capabilities: {\n         acceptInsecureCerts: \u001b[33mfalse\u001b[39m,\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         browserVersion: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         chrome: {\n           chromedriverVersion: \u001b[32m&#39;132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})&#39;\u001b[39m,\n           userDataDir: \u001b[32m&#39;/var/folders/yj/h3bj394n2tn74bp3vdngj35c0000jy/T/.org.chromium.Chromium.AXjfWG&#39;\u001b[39m\n         },\n         \u001b[32m&#39;fedcm:accounts&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: { debuggerAddress: \u001b[32m&#39;localhost:55097&#39;\u001b[39m },\n         networkConnectionEnabled: \u001b[33mfalse\u001b[39m,\n         pageLoadStrategy: \u001b[32m&#39;normal&#39;\u001b[39m,\n         platformName: \u001b[32m&#39;mac&#39;\u001b[39m,\n         proxy: {},\n         \u001b[32m&#39;se:cdpVersion&#39;\u001b[39m: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         setWindowRect: \u001b[33mtrue\u001b[39m,\n         strictFileInteractability: \u001b[33mfalse\u001b[39m,\n         timeouts: { implicit: \u001b[33m3000\u001b[39m, pageLoad: \u001b[33m300000\u001b[39m, script: \u001b[33m30000\u001b[39m },\n         unhandledPromptBehavior: \u001b[32m&#39;dismiss and notify&#39;\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:credBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:largeBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:minPinLength&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:prf&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:virtualAuthenticators&#39;\u001b[39m: \u001b[33mtrue\u001b[39m\n       }\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:54:58.015Z",
+        "  Request GET https://api.browserstack.com/automate/builds.json?status=running  ",
+        "\u001b[90mundefined\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:54:58.022Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "{ url: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:54:58.346Z",
+        "  Response 200 GET https://api.browserstack.com/automate/builds.json?status=running (331ms)",
+        "[\n     {\n       automation_build: {\n         name: \u001b[32m&#39;K8S-PLATFORM_WIN_CHROME_SANITY_LIVE_16203&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;3488f3ce1b8d89918c60bcb6330a39e496a75820&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/eWFrSnBTVlpsZlpoV2dIN0NhTjV6VVphQzVTNUFRcm4ydHB2TzBXRmg3WHRnY1dFL0RCQU41QXphYnUyRndKRmN2anNGbXhXdzYxOVMwbUhpYXlCUlE9PS0tQUlwdFZoSSsxeFhGNWlzcVByYXJHZz09--3831d1e50f943d322e134f07cb2366551f2d8afc&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n         duration: \u001b[33m5334787\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/eElBd1Q1SzQ2TDhubFVrdlRJQmo0VjhHT3JmRVJoeDdWMFhhRHJVeTV3NzN4UVpBSkJ1ZWh4ajJuVVhEcHd0THF5TXRuZ2FaaUVyclhOU1ptbkcxdVE9PS0taitrVEF5M2VXendFUDl4b29QdzZTUT09--68055ce371c50bdf5a6db122114ff4bc94185489&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;regression-1: 29454&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;4aa25167876bba82a815cb4a21709949140f5edd&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[32m&#39;regression&#39;\u001b[39m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/eGlNWHBGVVJZQlZ0VWp5YlJXZzU4N2xwemRXMHZ5RHV6cXp6Ynl5Um9hVEVoaDdPN016VUtMdFFuTUpONTlZSkVnVTNHUWM0bC9JZXp1aW1WaGZQNWc9PS0tZkJIZWMzYk5IUjBpaHd0bWNQS2hGQT09--626f85ee8c715883fc80065ba6f9d178677b9892&#39;\u001b[39m\n       }\n     }\n]"
+      ],
+      [
+        "2025-01-21T07:54:59.927Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (1905ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:54:59.939Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../complicated-page&#39;]&quot;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:00.009Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (71ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:00.013Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:00.071Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (58ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:00.082Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../complicated-page&#39;]&quot;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:00.141Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (59ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:00.144Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:00.263Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.1A5545D880E73D854386FABA872996DD.e.121/click (119ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:03.270Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:03.328Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (59ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/complicated-page&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:03.334Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:03.436Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (102ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:06.447Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:06.487Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (41ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:06.495Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-pricing-page&#39;]&quot;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:06.537Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (43ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:06.539Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:06.597Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (58ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:06.602Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-pricing-page&#39;]&quot;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:06.674Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (72ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:06.677Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:06.802Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.257/click (125ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:09.815Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:09.856Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (42ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/fake-pricing-page/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:09.861Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:09.902Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (41ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:12.908Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:12.945Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (38ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:12.953Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/filling-out-forms/&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:13.003Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (50ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:13.004Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:13.074Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (70ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:13.079Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/filling-out-forms/&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:13.119Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (40ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:13.120Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:13.663Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.319/click (542ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:16.692Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:16.741Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (49ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/filling-out-forms/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:16.761Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:16.814Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (53ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:19.822Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:19.857Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (34ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:19.867Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-landing-page&#39;]&quot;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:19.917Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (50ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:19.920Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:19.979Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (59ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:19.983Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{ using: \u001b[32m&#39;xpath&#39;\u001b[39m, value: \u001b[32m&quot;//a[@href=&#39;../fake-landing-page&#39;]&quot;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:20.023Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (40ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:20.026Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:20.788Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.380/click (763ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:23.793Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:23.831Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (38ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/fake-landing-page&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:23.835Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:23.884Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (49ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:26.889Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:26.926Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (38ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:26.931Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/sample-application-lifecycle-sprint-1/&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:26.972Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (41ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:26.973Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:27.062Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (89ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:27.066Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;https://ultimateqa.com/sample-application-lifecycle-sprint-1/&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:27.106Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (40ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:27.107Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:27.647Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.413/click (540ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:30.654Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:30.699Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (45ms)",
+        "{\n     value: \u001b[32m&#39;https://ultimateqa.com/sample-application-lifecycle-sprint-1/&#39;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:30.702Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:30.739Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (37ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:33.745Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:33.785Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (41ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:33.791Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;http://courses.ultimateqa.com/users/sign_in&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:33.833Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (42ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:33.834Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:33.904Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (70ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:33.909Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;http://courses.ultimateqa.com/users/sign_in&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:33.951Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (42ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:33.954Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:37.149Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.423/click (3196ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:40.092Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:40.185Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (93ms)",
+        "{ value: \u001b[32m&#39;https://courses.ultimateqa.com/users/sign_in&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:40.188Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:40.229Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (41ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:43.234Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:43.268Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (34ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:43.274Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;../simple-html-elements-for-automation/&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:43.317Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (42ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:43.318Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync  ",
+        "{\n     script: \u001b[32m&#39;/* isDisplayed */return (function(){return (function(){var g=this||self;\\n&#39;\u001b[39m +\n       \u001b[32m&#39;function aa(a){var b=typeof a;if(&quot;object&quot;==b)if(a){if(a instanceof Array)return&quot;array&quot;;if(a instanceof Object)return b;var c=Ob... (17053 characters)&#39;\u001b[39m,\n     args: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m,\n         ELEMENT: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:43.390Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/execute/sync (72ms)",
+        "{ value: \u001b[33mtrue\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:43.396Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements  ",
+        "{\n     using: \u001b[32m&#39;xpath&#39;\u001b[39m,\n     value: \u001b[32m&quot;//a[@href=&#39;../simple-html-elements-for-automation/&#39;]&quot;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:43.439Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/elements (43ms)",
+        "{\n     value: [\n       {\n         \u001b[32m&#39;element-6066-11e4-a52e-4f735466cecf&#39;\u001b[39m: \u001b[32m&#39;f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470&#39;\u001b[39m\n       }\n     ]\n  }"
+      ],
+      [
+        "2025-01-21T07:55:43.441Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470/click  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:44.913Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/element/f.730CB94B9581BAA1DF0FAECD43876F35.d.A59173CA4B979DA0E18262DB587FFC4D.e.470/click (1472ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:47.921Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:47.957Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (37ms)",
+        "{\n     value: \u001b[32m&#39;https://ultimateqa.com/simple-html-elements-for-automation/&#39;\u001b[39m\n  }"
+      ],
+      [
+        "2025-01-21T07:55:47.962Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back  ",
+        "{}"
+      ],
+      [
+        "2025-01-21T07:55:48.002Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/back (40ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:55:51.009Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:51.050Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/url (41ms)",
+        "{ value: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:51.058Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/se/log  ",
+        "{ type: \u001b[32m&#39;browser&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:51.087Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96/se/log (30ms)",
+        "{ value: [] }"
+      ],
+      [
+        "2025-01-21T07:55:51.091Z",
+        "  Request GET https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json  ",
+        "\u001b[90mundefined\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:51.511Z",
+        "  Response 200 GET https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json (420ms)",
+        "{\n     automation_session: {\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       duration: \u001b[1mnull\u001b[22m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       status: \u001b[32m&#39;running&#39;\u001b[39m,\n       hashed_id: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m,\n       logs: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96/logs&#39;\u001b[39m,\n       browserstack_status: \u001b[32m&#39;running&#39;\u001b[39m,\n       created_at: \u001b[32m&#39;2025-01-21T07:54:49.000Z&#39;\u001b[39m,\n       browser_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       public_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/d956518be29769710e38fb3683afb5691a006f96?auth_token=ed93a8946824528b41febb32352ed5a7a7204f3acec9e99c4ba94f3335c49cea&#39;\u001b[39m,\n       video_url: \u001b[32m&#39;https://automate.browserstack.com/sessions/d956518be29769710e38fb3683afb5691a006f96/video?token=MXBIUzRLMjBCSDR1aU5SYTE4QWd4eENTYW4vck1SM0ZGSTd1aVd4WUNtZmFDNlMyUVhWcFVZbENmVkVvcS9rVjFweDBhTWRhUUlQOXNHaEFUVGNhSkE9PS0tcDF4KzJXSWhlZHRtNEJWVVJVdW40Zz09--22b474d8b6722178114cd79116391fa2ba50b241&amp;source=rest_api&amp;diff=-1&#39;\u001b[39m,\n       browser_console_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-aps/s3.ap-south-1/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=ca07bd4b0f96279a03beba3dd4c1a6d569eceac0b2b0cc7d4d76a3c01af460af&#39;\u001b[39m,\n       har_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=475011ea31b3b4ce439ff298c2c89a164d388ce46261996a7a87f8c234eab96f&#39;\u001b[39m,\n       selenium_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=afa785a82e322575f210d21c0bdc0aa56ab200a2c7c5dcd2dd5509bfb2771f3f&#39;\u001b[39m,\n       selenium_telemetry_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/d956518be29769710e38fb3683afb5691a006f96/d956518be29769710e38fb3683afb5691a006f96-jaeger_spans.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=a28c86ed012bd6169119528a6b39e07ff66b0c8bd70abc1aac349f31464b656f&#39;\u001b[39m,\n       session_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/d956518be29769710e38fb3683afb5691a006f96-terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=fee6b59dedc9d36c25378ccf73df794c1494909db016633dead2edbad62c8eca&#39;\u001b[39m,\n       build_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075551Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=4322292f144bbeacee4ee90946cc98f24a0144e664eadf2bfb9cfa78874319ea&#39;\u001b[39m\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:55:51.513Z",
+        "  Request PUT https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json  ",
+        "{ status: \u001b[32m&#39;passed&#39;\u001b[39m, reason: \u001b[32m&#39;&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:51.899Z",
+        "  Response 200 PUT https://api.browserstack.com/automate/sessions/d956518be29769710e38fb3683afb5691a006f96.json (386ms)",
+        "{\n     automation_session: {\n       hashed_id: \u001b[32m&#39;d956518be29769710e38fb3683afb5691a006f96&#39;\u001b[39m,\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       status: \u001b[32m&#39;passed&#39;\u001b[39m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       duration: \u001b[1mnull\u001b[22m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:55:51.905Z",
+        "  Request DELETE https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:55:53.407Z",
+        "  Response 200 DELETE https://hub.browserstack.com/wd/hub/session/d956518be29769710e38fb3683afb5691a006f96 (1502ms)",
+        "{ state: \u001b[32m&#39;success&#39;\u001b[39m, status: \u001b[33m0\u001b[39m, value: \u001b[32m&#39;&#39;\u001b[39m, hCode: \u001b[32m&#39;13579246&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:55:53.465Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session  ",
+        "{\n     capabilities: {\n       firstMatch: [ {} ],\n       alwaysMatch: {\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         \u001b[32m&#39;bstack:options&#39;\u001b[39m: {\n           os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n           osVersion: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n           buildName: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n           sessionName: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n           source: \u001b[32m&#39;nightwatch:sample-sdk:v1.0&#39;\u001b[39m,\n           seleniumVersion: \u001b[32m&#39;4.0.0&#39;\u001b[39m,\n           userName: \u001b[32m&#39;bhavyananda_j1URsW&#39;\u001b[39m,\n           accessKey: \u001b[32m&#39;7MzqwjHuz4zB5mqHLHdF&#39;\u001b[39m,\n           browserstackSDK: \u001b[32m&#39;nightwatch-plugin/3.4.5&#39;\u001b[39m,\n           buildProductMap: {\n             automate: \u001b[33mtrue\u001b[39m,\n             app_automate: \u001b[33mfalse\u001b[39m,\n             observability: \u001b[33mtrue\u001b[39m,\n             accessibility: \u001b[33mfalse\u001b[39m,\n             turboscale: \u001b[33mfalse\u001b[39m,\n             percy: \u001b[33mfalse\u001b[39m\n           },\n           testhubBuildUuid: \u001b[32m&#39;cmckap0dgoqjevbftnom59nuvkondwiugkmpjefd&#39;\u001b[39m,\n           local: \u001b[90mundefined\u001b[39m\n         },\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: {}\n       }\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:56:08.401Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session (14934ms)",
+        "{\n     value: {\n       sessionId: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       capabilities: {\n         acceptInsecureCerts: \u001b[33mfalse\u001b[39m,\n         browserName: \u001b[32m&#39;chrome&#39;\u001b[39m,\n         browserVersion: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         chrome: {\n           chromedriverVersion: \u001b[32m&#39;132.0.6834.83 (03d59cf5ecf1d8444838ff9a1e96231304d4ff9c-refs/branch-heads/6834@{#3390})&#39;\u001b[39m,\n           userDataDir: \u001b[32m&#39;/var/folders/yj/h3bj394n2tn74bp3vdngj35c0000jy/T/.org.chromium.Chromium.E1xJ1Y&#39;\u001b[39m\n         },\n         \u001b[32m&#39;fedcm:accounts&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;goog:chromeOptions&#39;\u001b[39m: { debuggerAddress: \u001b[32m&#39;localhost:54540&#39;\u001b[39m },\n         networkConnectionEnabled: \u001b[33mfalse\u001b[39m,\n         pageLoadStrategy: \u001b[32m&#39;normal&#39;\u001b[39m,\n         platformName: \u001b[32m&#39;mac&#39;\u001b[39m,\n         proxy: {},\n         \u001b[32m&#39;se:cdpVersion&#39;\u001b[39m: \u001b[32m&#39;132.0.6834.84&#39;\u001b[39m,\n         setWindowRect: \u001b[33mtrue\u001b[39m,\n         strictFileInteractability: \u001b[33mfalse\u001b[39m,\n         timeouts: { implicit: \u001b[33m3000\u001b[39m, pageLoad: \u001b[33m300000\u001b[39m, script: \u001b[33m30000\u001b[39m },\n         unhandledPromptBehavior: \u001b[32m&#39;dismiss and notify&#39;\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:credBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:largeBlob&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:minPinLength&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:extension:prf&#39;\u001b[39m: \u001b[33mtrue\u001b[39m,\n         \u001b[32m&#39;webauthn:virtualAuthenticators&#39;\u001b[39m: \u001b[33mtrue\u001b[39m\n       }\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:56:08.408Z",
+        "  Request GET https://api.browserstack.com/automate/builds.json?status=running  ",
+        "\u001b[90mundefined\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:56:08.414Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/url  ",
+        "{ url: \u001b[32m&#39;https://ultimateqa.com/automation/&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:56:08.710Z",
+        "  Response 200 GET https://api.browserstack.com/automate/builds.json?status=running (301ms)",
+        "[\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack-build-wdio-1 21-Jan-13:26&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;a746b005c3606d295f492da77d636de810a0fa66&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/Yll5SS9HVDVFYSt0WHRLTkQ0cHRsWXZDdWJLOTg2d3BSUXpxejlkOFVtd3pnNThMLzhUVENmWjF5SG9KWnNzZTA3TUpNTVovQXA0eXZKTzVrb2FoRGc9PS0tTnZSbjNLZGFudDJuQUx0TkV1aUdDQT09--23d78026016f5ed39ee29ad0a4394f2509932117&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;jenkins-BrowserStack Sales Demo-8565&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;1e3e263431ac3a6e25f770fab717ea1f99ca69e7&#39;\u001b[39m,\n         duration: \u001b[33m61\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/S3gxTkRmKzJ1LzlQS1ExMWhLOGdDKzFtK3I1WXN2V05vUkgxL2hkYXQvRFA4L0xhbzJLOEEyZ2YxcDBhVW1EUHBtcUV1SDRLQWdNWjEwWEFQU3FMOHc9PS0tQ21udmsvcERkRHBBam45bHQzMEpnZz09--6defb6b0a9ddcbb737685626ffb6dc0a75c4cdbe&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n         duration: \u001b[33m5334951\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/M1dqM1AwZi93WE1MNjVjMjhKS2g0cG1pelJhSmhVTmNPRGRYMWJMN2p2REVZKzRjeTFXS0Nna3FmZUJmZnk0aUVaUEhLZXo2eFBqWmh0MXMyajlsY0E9PS0tNHRDcEZEcE1TbTlBK1lrd2ovTzhtQT09--bb1b058fc3acbcd443b992b830192b6c905df3fd&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;browserstack build YPS zenni  259&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;21b28b20e6205ac4cef2cac3aedbc8df8f07c165&#39;\u001b[39m,\n         duration: \u001b[33m26\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/RktXM0VqbFNYMStrbW5uaXNETFpIRjZJY2FpMTloVHNnZ09UaEhQakZQa0NCT3BiT3FtS3BEK1BiSGt5Z1FsL2pnV0dxUlVrUWw2bUpxdENQL2dOR0E9PS0tUytVRFZDcjV2ZjRXbU9CMW15WnRlZz09--0d8a515b48a20ff1ba8ff2047e5b15e23e1619e9&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;K8S-PLATFORM_WIN_CHROME_SANITY_LIVE_16203&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;3488f3ce1b8d89918c60bcb6330a39e496a75820&#39;\u001b[39m,\n         duration: \u001b[33m82\u001b[39m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[1mnull\u001b[22m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/OUIvdzBnRkJTNXJvVmo3dnU4TWl1TGhMbGI1RTR4eGorejhWcVRJVVlkc1VvUW5haHhtZVhyN1U4RGtzVTF6ODdLdjdlSU9GWlUvSGo5NkJhYTVnY0E9PS0tNVhqY0xEMThnOWVFWnBFdkNoL05yZz09--b6a9a8dc1db6763f926913374a3ced8a9c872e9e&#39;\u001b[39m\n       }\n     },\n     {\n       automation_build: {\n         name: \u001b[32m&#39;regression-1: 29454&#39;\u001b[39m,\n         hashed_id: \u001b[32m&#39;4aa25167876bba82a815cb4a21709949140f5edd&#39;\u001b[39m,\n         duration: \u001b[1mnull\u001b[22m,\n         status: \u001b[32m&#39;running&#39;\u001b[39m,\n         build_tag: \u001b[32m&#39;regression&#39;\u001b[39m,\n         public_url: \u001b[32m&#39;https://automate.browserstack.com/dashboard/v2/public-build/OGhKMnRMd1lFODN1UDZHYXZhL2RCK2c4TERnTkdFVk52bEw0Mk5wNVVrM0x6ZWJSZWEyY1hoVlVOSzBKUmNyUVNNWXB3UkhIMEZYalFrVUJvVXpNY1E9PS0tZ1MwS2FwWmdsTTdWa1ViNWlvTGJvZz09--7c15b69022c360d28fe5d79719e023ffda084b7b&#39;\u001b[39m\n       }\n     }\n]"
+      ],
+      [
+        "2025-01-21T07:56:10.815Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/url (2401ms)",
+        "{ value: \u001b[1mnull\u001b[22m }"
+      ],
+      [
+        "2025-01-21T07:56:10.821Z",
+        "  Request GET https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/title  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:56:10.909Z",
+        "  Response 200 GET https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/title (88ms)",
+        "{ value: \u001b[32m&#39;Automation Practice - Ultimate QA&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:56:10.917Z",
+        "  Request POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/se/log  ",
+        "{ type: \u001b[32m&#39;browser&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:56:10.962Z",
+        "  Response 200 POST https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c/se/log (45ms)",
+        "{ value: [] }"
+      ],
+      [
+        "2025-01-21T07:56:10.964Z",
+        "  Request GET https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json  ",
+        "\u001b[90mundefined\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:56:12.274Z",
+        "  Response 200 GET https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json (1308ms)",
+        "{\n     automation_session: {\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       duration: \u001b[1mnull\u001b[22m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       status: \u001b[32m&#39;running&#39;\u001b[39m,\n       hashed_id: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m,\n       logs: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c/logs&#39;\u001b[39m,\n       browserstack_status: \u001b[32m&#39;running&#39;\u001b[39m,\n       created_at: \u001b[32m&#39;2025-01-21T07:55:54.000Z&#39;\u001b[39m,\n       browser_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       public_url: \u001b[32m&#39;https://automate.browserstack.com/builds/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/sessions/343eede44dd91cb42f7c3761c7701c84f028887c?auth_token=b9318a4d8f564e402c54e46ed1fe600af6f2bd4ac8d31571c66e96fa52a60882&#39;\u001b[39m,\n       video_url: \u001b[32m&#39;https://automate.browserstack.com/sessions/343eede44dd91cb42f7c3761c7701c84f028887c/video?token=b0lGdTlnM2dFa3FIMWlnL0IzMFYyK05tRHZiclVxRUtSeTlGdkNSY1FSNXFuNHBoUTBUbFo3QmUvcEM0REt1Tm0vRi9QdWNUK3NLcER4dUVlVkNRYXc9PS0teFkreVFBNWtvSFFlWm9IVkVLb1ptZz09--80cfb38b6b59df7fa72da182c59ffe89b8a92dd9&amp;source=rest_api&amp;diff=-1&#39;\u001b[39m,\n       browser_console_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-aps/s3.ap-south-1/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-console-logs-v2.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=f04c2b2cfa9992726b6350af2992f9b6608e4fb05f392c2ce803d6fa298b6b31&#39;\u001b[39m,\n       har_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-har-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=bf0971c361c6bcd58bef5af37c1bf9bb896dc85abda4d379dc32f94160932fae&#39;\u001b[39m,\n       selenium_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-selenium-logs.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=3eecd91d3b989987ced280a96d48f7df7fa4798ff40d70ea418ed94ebf8ff3af&#39;\u001b[39m,\n       selenium_telemetry_logs_url: \u001b[32m&#39;https://bs-selenium-logs-aps.s3.ap-south-1.amazonaws.com/343eede44dd91cb42f7c3761c7701c84f028887c/343eede44dd91cb42f7c3761c7701c84f028887c-jaeger_spans.tar.gz?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=49b0fd8f22a913021926dc9c65f5a40b48db49cc60464acf3004dce701774cdc&#39;\u001b[39m,\n       session_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/343eede44dd91cb42f7c3761c7701c84f028887c-terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0437237199ecf983829f6261e05ec6d77c09c8187d926cd7fabd87b7c8c11d9c&#39;\u001b[39m,\n       build_terminal_logs_url: \u001b[32m&#39;https://automate.browserstack.com/s3-upload/bs-selenium-logs-use/s3/data/52a4accd8cecb3c98d7e3eb15886b856eb20d1bf/terminal-logs.txt?response-content-type=text%2Fplain&amp;X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIA2XUQHUQMOVAWXD4D%2F20250121%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20250121T075612Z&amp;X-Amz-Expires=604800&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=29aca3b3a461177badcd2f5c5a74aaf4119673213d7d0fe501a92bfa9b746107&#39;\u001b[39m\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:56:12.275Z",
+        "  Request PUT https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json  ",
+        "{ status: \u001b[32m&#39;passed&#39;\u001b[39m, reason: \u001b[32m&#39;&#39;\u001b[39m }"
+      ],
+      [
+        "2025-01-21T07:56:12.653Z",
+        "  Response 200 PUT https://api.browserstack.com/automate/sessions/343eede44dd91cb42f7c3761c7701c84f028887c.json (378ms)",
+        "{\n     automation_session: {\n       hashed_id: \u001b[32m&#39;343eede44dd91cb42f7c3761c7701c84f028887c&#39;\u001b[39m,\n       name: \u001b[32m&#39;BStack nightwatch snippet&#39;\u001b[39m,\n       status: \u001b[32m&#39;passed&#39;\u001b[39m,\n       os: \u001b[32m&#39;OS X&#39;\u001b[39m,\n       os_version: \u001b[32m&#39;Big Sur&#39;\u001b[39m,\n       browser: \u001b[32m&#39;chrome&#39;\u001b[39m,\n       browser_version: \u001b[32m&#39;132.0&#39;\u001b[39m,\n       device: \u001b[1mnull\u001b[22m,\n       duration: \u001b[1mnull\u001b[22m,\n       reason: \u001b[1mnull\u001b[22m,\n       build_name: \u001b[32m&#39;browserstack-build-1&#39;\u001b[39m,\n       project_name: \u001b[32m&#39;Untitled Project&#39;\u001b[39m,\n       build_hashed_id: \u001b[32m&#39;52a4accd8cecb3c98d7e3eb15886b856eb20d1bf&#39;\u001b[39m,\n       test_priority: \u001b[1mnull\u001b[22m\n     }\n  }"
+      ],
+      [
+        "2025-01-21T07:56:12.658Z",
+        "  Request DELETE https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c  ",
+        "\u001b[32m&#39;&#39;\u001b[39m"
+      ],
+      [
+        "2025-01-21T07:56:14.392Z",
+        "  Response 200 DELETE https://hub.browserstack.com/wd/hub/session/343eede44dd91cb42f7c3761c7701c84f028887c (1734ms)",
+        "{ state: \u001b[32m&#39;success&#39;\u001b[39m, status: \u001b[33m0\u001b[39m, value: \u001b[32m&#39;&#39;\u001b[39m, hCode: \u001b[32m&#39;13579246&#39;\u001b[39m }"
+      ]
+    ]
+  }
+}
