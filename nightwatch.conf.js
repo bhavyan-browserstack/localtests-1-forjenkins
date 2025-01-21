@@ -12,8 +12,8 @@ const bstackOptions = {
     "sessionName" : "BStack nightwatch snippet",
     "source": "nightwatch:sample-sdk:v1.0",
     "seleniumVersion" : "4.0.0",
-    userName: 'bhavyananda_j1URsW',
-    accessKey: '7MzqwjHuz4zB5mqHLHdF',
+    userName: '',
+    accessKey: '',
   },
 }
 
