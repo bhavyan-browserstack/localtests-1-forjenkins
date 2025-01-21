@@ -57,15 +57,15 @@ class linkFunc {
     await browser.back();
     await browser.pause(3000); // Wait for the page to load
   }
-  async captureConsoleEvents() {
-    const logs = await browser.getLog('browser');  // Capture browser logs
-    logs.forEach(log => {
-      const message = log.message;
-        console.log(`Log Type: ${log.level}, Timestamp: ${log.timestamp}`);
-        console.log('Log Message:', JSON.stringify(message, null, 2));  // Pretty-print the object 
+  // async captureConsoleEvents() {
+  //   const logs = await browser.getLog('browser');  // Capture browser logs
+  //   logs.forEach(log => {
+  //     const message = log.message;
+  //       console.log(`Log Type: ${log.level}, Timestamp: ${log.timestamp}`);
+  //       console.log('Log Message:', JSON.stringify(message, null, 2));  // Pretty-print the object 
 
-    });
-  }
+  //   });
+  // }
   
 }
 
