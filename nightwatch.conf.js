@@ -51,11 +51,11 @@ module.exports = {
     },
   },
 
-  usage_analytics: {
-    enabled: true,
-    log_path: './logs/analytics',
-    client_id: 'ea208409-06ef-43eb-a5a4-f3292f544ba5',
-  },
+  // usage_analytics: {
+  //   enabled: true,
+  //   log_path: './logs/analytics',
+  //   client_id: 'ea208409-06ef-43eb-a5a4-f3292f544ba5',
+  // },
 }
 
 // const bstackOptions = {
