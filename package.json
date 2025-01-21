@@ -2,7 +2,6 @@
   "devDependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "@nightwatch/browserstack": "^3.4.5",
-    "browserstack-node-sdk": "^1.34.35",
     "chromedriver": "^132.0.0",
     "nightwatch": "^3.11.0"
   },
@@ -10,6 +9,6 @@
     "@cucumber/cucumber": "^11.2.0"
   },
   "scripts": {
-    "test": "npx nightwatch --tags @link "
+    "test": "npx nightwatch  "
   }
 }
