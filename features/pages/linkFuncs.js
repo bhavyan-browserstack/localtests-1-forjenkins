@@ -61,16 +61,16 @@ class linkFunc {
   /**
  * Capture browser console logs
  */
-  async captureConsoleEvents() {
-    await browser.pause(5000);
+//   async captureConsoleEvents() {
+//     await browser.pause(5000);
 
-    browser.getLog('browser', function(logEntriesArray) {
-      console.log('Log length: ' + logEntriesArray.length);
-      logEntriesArray.forEach(function(log) {
-         console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
-       });
-    });
+//     browser.getLog('browser', function(logEntriesArray) {
+//       console.log('Log length: ' + logEntriesArray.length);
+//       logEntriesArray.forEach(function(log) {
+//          console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
+//        });
+//     });
     
-}
+// }
 }
 module.exports = new linkFunc();

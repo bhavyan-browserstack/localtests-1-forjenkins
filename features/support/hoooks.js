@@ -24,15 +24,15 @@ AfterAll(async () => {
   }
 });
 
-After(async (scenario) => {
-  try {
-    console.log("Capturing console logs for scenario:", scenario.pickle.name);
+// After(async (scenario) => {
+//   try {
+//     console.log("Capturing console logs for scenario:", scenario.pickle.name);
 
-    // Capture console logs and output errors
-    await linkFunc.captureConsoleEvents();
+//     // Capture console logs and output errors
+//     await linkFunc.captureConsoleEvents();
 
-  } catch (error) {
-    console.error("Error capturing console logs:", error);
-    throw error;  // Rethrow the error to indicate test failure if needed
-  }
-});
+//   } catch (error) {
+//     console.error("Error capturing console logs:", error);
+//     throw error;  // Rethrow the error to indicate test failure if needed
+//   }
+// });
