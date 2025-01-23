@@ -34,6 +34,9 @@ const browserStack = {
 
   desiredCapabilities: {
     browserName: 'chrome',
+    loggingPrefs: {
+      browser: 'ALL' 
+    },
     ...bstackOptions
   }
 }
