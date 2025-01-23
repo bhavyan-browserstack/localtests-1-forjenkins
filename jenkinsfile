@@ -1,0 +1,16 @@
+pipeline {
+      agent any
+      stages {
+          stage('setup') {
+            steps {
+                browserstack(credentialsId: 'a01d8930-ac03-4c80-81b0-509bb9dc7449	') {
+                    // add commands to run test
+                    // Following are some of the example commands -----
+                    sh 'npm install'
+                    sh 'node single.js'
+                    sh 'node parallel.js'
+                }
+                browserStackReportPublisher 'automate'
+            }
+          }
+        }

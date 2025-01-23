@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.2.0",
+    "@nightwatch/browserstack": "^3.4.5",
+    "chromedriver": "^132.0.0",
+    "nightwatch": "^3.11.0"
+  },
+  "optionalDependencies": {
+    "@cucumber/cucumber": "^11.2.0"
+  },
+  "scripts": {
+    "test": "npx nightwatch "
+  }
+}
