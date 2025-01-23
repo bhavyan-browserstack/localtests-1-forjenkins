@@ -4,5 +4,5 @@ node_modules
 log
 logs
 
-test_output
+tests_output
 browserstack.yml
