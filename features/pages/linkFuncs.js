@@ -41,6 +41,7 @@ class linkFunc {
   */
   async checkTitle(title){
     await browser.expect.title().to.equal(title);  
+    
   }
 
 
@@ -57,16 +58,20 @@ class linkFunc {
     await browser.back();
     await browser.pause(3000); // Wait for the page to load
   }
-  // async captureConsoleEvents() {
-  //   const logs = await browser.getLog('browser');  // Capture browser logs
-  //   logs.forEach(log => {
-  //     const message = log.message;
-  //       console.log(`Log Type: ${log.level}, Timestamp: ${log.timestamp}`);
-  //       console.log('Log Message:', JSON.stringify(message, null, 2));  // Pretty-print the object 
+  /**
+ * Capture browser console logs
+ */
+  async captureConsoleEvents() {
+    await browser.pause(40000)
+    browser.getLog('browser', function(logEntriesArray) {
+      console.log('Log length: ' + logEntriesArray.length);
+      console.log(logEntriesArray)
+      logEntriesArray.forEach(function(log) {
+         console.log('[' + log.level + '] ' + log.timestamp + ' : ' + log.message);
+       });
 
-  //   });
-  // }
-  
+    });
+    
 }
-
+}
 module.exports = new linkFunc();

@@ -1,2 +1,8 @@
-# localtests-1-forjenkins
-completed test-suite integrated with aut and o11ly and run via jenkins
+These are test scripts written with nightwatch+cucumber.
+Steps to run:
+npm install 
+
+TO RUN TESTS:
+all scenarios-npx nightwatch
+link validation-npx nightwatch --tags @link
+title validation-npx nightwatch --tags @title

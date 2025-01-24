@@ -1,7 +1,7 @@
 Feature: Validate navigation for specific links based on href attribute
 
   @link @link1
-  Scenario: Validate navigation for the "complicated-page" link
+  Scenario: Validate navigation for links
     Given I open the Automation Practice page for links
     When I find and click the link with href "../complicated-page"
     Then I should be redirected to the page with URL containing "https://ultimateqa.com/complicated-page"

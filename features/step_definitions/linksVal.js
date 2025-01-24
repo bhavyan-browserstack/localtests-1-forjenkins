@@ -24,7 +24,3 @@ Then('I should be redirected to the page with URL containing {string}', async (e
   console.log(`headed back to ${currentURL2}`);
 });
 
-// After(async () => {
-//   await linkFunc.captureConsoleEvents();
-// });
-
