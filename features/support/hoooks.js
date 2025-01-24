@@ -27,7 +27,8 @@ AfterAll(async () => {
 After(async (scenario) => {
   try {
     console.log("Capturing console logs for scenario:", scenario.pickle.name);
-
+    const logTypes = await browser.getLogTypes();
+    console.log('Available Log Types:', logTypes);
     // Capture console logs and output errors
     await linkFunc.captureConsoleEvents();
 

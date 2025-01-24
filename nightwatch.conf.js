@@ -1,5 +1,7 @@
 
 const additonalEnvironments = require("./environments.js");
+const events = require('events');
+events.EventEmitter.defaultMaxListeners = 20;
 
 if(!additonalEnvironments.test_settings)
   additonalEnvironments.test_settings = {};
@@ -14,6 +16,9 @@ const bstackOptions = {
     "seleniumVersion" : "4.0.0",
     userName: '' || process.env.BROWSERSTACK_USERNAME,
     accessKey: '' || process.env.BROWSERSTACK_ACCESS_KEY,
+    "debug" : "true",
+    "networkLogs": "true",
+    "consoleLogs": "info"
   },
 }
 
@@ -34,8 +39,11 @@ const browserStack = {
 
   desiredCapabilities: {
     browserName: 'chrome',
+    'goog:chromeOptions': {
+      args: ['--enable-logging', '--v=1'], // Ensure logging is enabled
+    },
     loggingPrefs: {
-      browser: 'ALL' 
+      browser: 'ALL', // Capture all browser-level logs
     },
     ...bstackOptions
   }
@@ -43,6 +51,7 @@ const browserStack = {
 
 const nightwatchConfigs = {
   src_folders: ['features'],
+  output_folder: false, //
   test_runner: {
     type: 'cucumber',
     options: {
@@ -73,6 +82,9 @@ const nightwatchConfigs = {
       ...browserStack,
       desiredCapabilities:{
         browserName: 'chrome',
+        loggingPrefs: {
+          browser: 'ALL',
+        },
         ...bstackOptions
       }
     },
