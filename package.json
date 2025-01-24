@@ -9,6 +9,6 @@
     "@cucumber/cucumber": "^11.2.0"
   },
   "scripts": {
-    "test": "npx nightwatch "
+    "test": "npx nightwatch  "
   }
 }

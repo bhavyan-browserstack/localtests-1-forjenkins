@@ -4,6 +4,6 @@ node_modules
 log
 logs
 test_output
-
+package-lock.json
 test_output
 browserstack.yml

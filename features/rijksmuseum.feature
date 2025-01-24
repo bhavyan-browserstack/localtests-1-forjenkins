@@ -13,5 +13,4 @@ Feature: Validate the page title of the Automation Practice page
 
 
 
-
   
